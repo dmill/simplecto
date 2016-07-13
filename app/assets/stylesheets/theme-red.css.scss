@@ -20,6 +20,13 @@ h3 {
   margin-bottom: 0;
 }
 
+h4 {
+  font-family: "Raleway", sans-serif;
+  color: $black;
+  font-size: 28px;
+  font-weight: 500;
+}
+
 p {
   color: $black;
   font-family: "Lora", serif;
@@ -29,6 +36,10 @@ p {
 
 h2.white {
   color: #fff;
+}
+
+h2.black {
+  color: $black;
 }
 
 .button.pill {
