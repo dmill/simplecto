@@ -23,11 +23,17 @@ body {
   }
 }
 
-section.white {
-  background-color: #fff;
+section {
   position: relative;
 }
 
+section.white {
+  background-color: #fff;
+}
+
+section.black {
+  background-color: $black;
+}
 .centered {
   text-align: center;
 }
@@ -41,4 +47,8 @@ section.white {
   font-size: 115px;
   color: $red;
   margin: 20px 0;
+}
+
+.expert {
+  width: 80%;
 }
