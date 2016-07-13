@@ -52,3 +52,36 @@ section.black {
 .expert {
   width: 80%;
 }
+
+input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: none;
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+  font-size: 36px;
+  font-weight: 700;
+  height: 80px;
+  margin-bottom: 40px;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+::-webkit-input-placeholder {
+   color: $blue;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: $blue;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: $blue;
+}
+
+:-ms-input-placeholder {
+   color: $blue;
+}

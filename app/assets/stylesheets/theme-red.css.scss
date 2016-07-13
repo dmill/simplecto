@@ -68,6 +68,26 @@ h2.black {
   }
 }
 
+.button.pill-red {
+  border-radius: 100px;
+  background-color: $red;
+  height: 50px;
+  padding: 15px 35px;
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+  letter-spacing: 1px;
+
+  &:hover {
+    background-color: #fff;
+    color: #333;
+    transition: 0.2s;
+  }
+}
+
 img.circle {
   border-radius: 100%;
 }
