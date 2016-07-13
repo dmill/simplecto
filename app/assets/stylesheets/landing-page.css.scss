@@ -1,0 +1,33 @@
+#background {
+  background: url('/images/collage.png');
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 0;
+}
+
+.hero {
+  padding-top: 20vh;
+  text-align: center;
+  height: 100vh;
+
+  h2 {
+    margin-top: -20px;
+    font-size: 36px;
+    margin-bottom: 80px;
+  }
+}
+
+section.white {
+  background-color: #fff;
+  position: relative;
+}
+
+.centered {
+  text-align: center;
+}
+
+.img-offset {
+  margin-top: calc(50% - 115px);
+}
