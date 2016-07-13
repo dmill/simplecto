@@ -1,5 +1,6 @@
 $red: #E60038;
 $black: #2e2f33;
+$blue: #9bf0e1;
 
 h1 {
   font-family: "Raleway", sans-serif;
@@ -29,13 +30,17 @@ h4 {
 
 p {
   color: $black;
-  font-family: "Lora", serif;
+  font-family: "Lato", serif;
   font-size: 22px;
   margin-top: 10px;
 }
 
-h2.white {
+h2.white, h3.white, p.white {
   color: #fff;
+}
+
+h3.blue {
+  color: #9bf0e1;
 }
 
 h2.black {
