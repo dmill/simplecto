@@ -2,6 +2,27 @@ body {
   background-color: $red;
 }
 
+nav {
+  height: 60px;
+  background-color: rgba(23,23,23,0.9);
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  line-height: 60px;
+  color: #fff;
+
+  .nav-button {
+    padding: 0 20px;
+  }
+
+  .nav-right {
+    float: right;
+  }
+}
+
 #background {
   background: url('/images/collage.png');
   background-size: cover;
