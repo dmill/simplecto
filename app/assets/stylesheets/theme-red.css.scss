@@ -1,6 +1,8 @@
 $red: #E60038;
 $black: #2e2f33;
 $blue: #9bf0e1;
+$purple: #843cd1;
+// $purple: #5e239d;
 
 h1 {
   font-family: "Raleway", sans-serif;
@@ -12,6 +14,7 @@ h2 {
   font-family: "Raleway", sans-serif;
   font-size: 48px;
   color: $red;
+  font-weight: 800;
 }
 
 h3 {
@@ -35,8 +38,12 @@ p {
   margin-top: 10px;
 }
 
-h2.white, h3.white, p.white {
+h2.white, h3.white, h4.white, p.white {
   color: #fff;
+}
+
+h2.purple, h3.purple, h4.purple {
+  color: $purple;
 }
 
 h3.blue {
@@ -83,7 +90,7 @@ h2.black {
 
   &:hover {
     background-color: #fff;
-    color: #333;
+    color: $purple;
     transition: 0.2s;
   }
 }

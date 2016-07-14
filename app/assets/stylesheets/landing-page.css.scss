@@ -25,6 +25,12 @@ body {
 
 section {
   position: relative;
+  padding: 40px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+
+  h2 {
+    margin-bottom: -20px;
+  }
 }
 
 section.white {
@@ -32,43 +38,72 @@ section.white {
 }
 
 section.black {
+  background: url('/images/shattered.gif');
   background-color: $black;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
 }
+
 .centered {
   text-align: center;
 }
 
 .img-offset {
-  margin-top: calc(50%);
-  width: 90%;
-}
-
-.icon {
-  font-size: 115px;
-  color: $red;
-  margin: 20px 0;
-}
-
-.expert {
+  margin-top: calc(35%);
   width: 80%;
 }
 
-input {
-  width: 100%;
-  border: none;
-  border-bottom: 1px solid #fff;
-  background: none;
-  font-family: "Raleway", sans-serif;
-  color: #fff;
-  font-size: 36px;
-  font-weight: 700;
-  height: 80px;
-  margin-bottom: 40px;
+.experts {
+  .expert-col {
+    padding: 20px;
+  }
 
-  &:focus {
-    outline: none;
+  .expert {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 18px;
+    font-weight: 300;
   }
 }
+
+section.lead-capture {
+  padding-bottom: 80px;
+
+  h1 {
+    margin-bottom: 10px;
+  }
+
+}
+
+.form {
+  margin-top: 40px;
+
+  input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: none;
+    font-family: "Raleway", sans-serif;
+    color: #fff;
+    font-size: 32px;
+    font-weight: 700;
+    height: 60px;
+    margin-bottom: 30px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .button {
+    margin-top: 40px;
+    display: inline-block;
+  }
+}
+
 
 ::-webkit-input-placeholder {
    color: $blue;
