@@ -4,6 +4,53 @@ $blue: #9bf0e1;
 $purple: #843cd1;
 // $purple: #5e239d;
 
+body {
+  background-color: $red;
+}
+
+// navigation
+nav {
+  height: 60px;
+  background-color: rgba(23,23,23,0.8);
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  line-height: 60px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: "Raleway", sans-serif;
+
+  .nav-button {
+    padding: 0 15px;
+    cursor: pointer;
+
+    &:hover {
+      color: $blue;
+    }
+  }
+
+  .nav-button.static {
+    color: #c1c3c6;
+  }
+
+  .nav-button.secondary {
+    color: #c1c3c6;
+
+    &:hover {
+      color: $blue;
+    }
+  }
+
+  .nav-right {
+    float: right;
+  }
+}
+
+// headings
 h1 {
   font-family: "Raleway", sans-serif;
   font-size: 72px;
@@ -54,6 +101,29 @@ h2.black {
   color: $black;
 }
 
+// sections
+section {
+  position: relative;
+  padding: 40px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+
+  h2 {
+    margin-bottom: -20px;
+  }
+}
+
+section.white {
+  background-color: #fff;
+}
+
+section.black {
+  background: url('/images/shattered.gif');
+  background-color: $black;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+}
+
+// buttons
 .button.pill {
   border: 3px solid #fff;
   border-radius: 100px;
@@ -95,6 +165,28 @@ h2.black {
   }
 }
 
+// component styles
+.centered {
+  text-align: center;
+}
+
 img.circle {
   border-radius: 100%;
+}
+
+// other styles
+::-webkit-input-placeholder {
+   color: $blue;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: $blue;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: $blue;
+}
+
+:-ms-input-placeholder {
+   color: $blue;
 }
