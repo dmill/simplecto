@@ -1,0 +1,7 @@
+<h2>New Question</h2>
+
+<%= form_for @question, url: {action: "create"}, html: {class: "nifty_form"} do |f| %>
+  <%= f.text_field :title %>
+  <%= f.text_area :question_text, size: "60x12" %>
+  <%= f.submit "Ask" %>
+<% end %>
