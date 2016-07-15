@@ -14,5 +14,13 @@
   .devise-links {
     margin-top: 3rem;
   }
+
+  a:link, a:visited, a:active {
+    color: $purple;
+  }
+
+  a:hover {
+    color: $purple-hl;
+  }
 }
 
