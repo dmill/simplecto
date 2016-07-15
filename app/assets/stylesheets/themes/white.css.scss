@@ -1,10 +1,49 @@
 $black: #1c1c1f;
+$grey: #dfe0e6;
+$red: #E60038;
+$red-hl: #f83364;
+$purple: #843cd1;
 
 body {
   background-color: #fff;
   color: $black;
+  font-family: "Lato", sans-serif;
 }
 
 nav {
+  height: 80px;
+  line-height: 80px;
+  border-bottom: 1px solid $grey;
+}
 
+h2 {
+  font-size: 24px;
+}
+
+.button.pill {
+  border-radius: 100px;
+  background-color: $red;
+  height: 35px;
+  padding: 0 35px;
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+  letter-spacing: 1px;
+  line-height: 35px;
+
+  &:hover {
+    background-color: $red-hl;
+    transition: 0.2s;
+  }
+}
+
+a {
+  color: $red;
+}
+
+a:hover {
+  color: $red-hl;
 }

@@ -28,6 +28,11 @@ nav {
     padding: 0 15px;
     cursor: pointer;
 
+    a:link, a:hover, a:active, a:visited {
+      color: inherit;
+    }
+
+
     &:hover {
       color: $blue;
     }
@@ -163,15 +168,6 @@ section.black {
     color: $purple;
     transition: 0.2s;
   }
-}
-
-// component styles
-.centered {
-  text-align: center;
-}
-
-img.circle {
-  border-radius: 100%;
 }
 
 // other styles

@@ -11,12 +11,11 @@
   </head>
 
   <body>
-
-    <!-- For Devise below  -->
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-
     <%= yield :head %>
     <%= yield %>
+
+    <!-- For Devise below  -->
+    <p class="flash notice"><%= notice %></p>
+    <p class="flash alert"><%= alert %></p>
   </body>
 </html>

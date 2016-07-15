@@ -16,10 +16,12 @@
 @import 'bootstrap.min';
 @import 'font-awesome';
 @import 'landing-page';
+@import 'authentication';
 
 html, body {
   width: 100%;
   margin: 0;
+  font-size: 10px;
 }
 
 * {
@@ -28,5 +30,28 @@ html, body {
 
 a:link, a:hover, a:active, a:visited {
   text-decoration: none;
-  color: inherit;
+}
+
+input[type='submit'] {
+  border: none;
+}
+
+// component styles
+.clear-fix:after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+.centered {
+  text-align: center;
+}
+
+img.circle {
+  border-radius: 100%;
+}
+
+.flash {
+  margin: 0;
+  padding: 0;
 }
