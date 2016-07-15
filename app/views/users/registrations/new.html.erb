@@ -6,7 +6,7 @@
   <div class="logo">SimpleCTO</div>
 </nav>
 
-<div class="container-fluid body">
+<div class="container body">
   <div class="row">
     <div class="centered col-md-6 col-md-offset-3">
       <h2>Sign up to ask a question</h2>
@@ -38,7 +38,9 @@
           <%= f.submit "Sign up", class: "button pill" %>
         </div>
       <% end %>
-      <p>Already have an account? <%= link_to 'Log in', new_user_session_path %></p>
+      <div class="devise-links">
+        Already have an account? <%= link_to 'Log in', new_user_session_path %>
+      </div>
     </div>
   </div>
 </div>
