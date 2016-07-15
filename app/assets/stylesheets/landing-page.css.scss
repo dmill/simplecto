@@ -1,3 +1,4 @@
+#landing-page {
 #background {
   background: url('/images/collage.png');
   background-size: cover;
@@ -5,6 +6,56 @@
   width: 100%;
   position: fixed;
   z-index: 0;
+}
+
+h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 72px;
+  color: #fff;
+}
+
+h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 48px;
+  color: $red;
+  font-weight: 800;
+}
+
+h3 {
+  font-family: "Raleway", sans-serif;
+  font-size: 36px;
+  color: $red;
+  margin-bottom: 0;
+}
+
+h4 {
+  font-family: "Raleway", sans-serif;
+  color: $black;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+p {
+  color: $black;
+  font-family: "Lato", serif;
+  font-size: 22px;
+  margin-top: 10px;
+}
+
+h2.white, h3.white, h4.white, p.white {
+  color: #fff;
+}
+
+h2.purple, h3.purple, h4.purple {
+  color: $purple;
+}
+
+h3.blue {
+  color: #9bf0e1;
+}
+
+h2.black {
+  color: $black;
 }
 
 .hero {
@@ -82,4 +133,65 @@ section.lead-capture {
 
 .img-bottom {
   padding-bottom: -80px;
+}
+
+// buttons
+.button.pill {
+  border: 3px solid #fff;
+  border-radius: 100px;
+  height: 50px;
+  background: none;
+  padding: 12px 35px;
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+  letter-spacing: 1px;
+
+  &:hover {
+    background-color: #fff;
+    color: $red;
+    transition: 0.2s;
+  }
+}
+
+.button.pill-red {
+  border-radius: 100px;
+  background-color: $red;
+  height: 50px;
+  padding: 15px 35px;
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+  letter-spacing: 1px;
+
+  &:hover {
+    background-color: #fff;
+    color: $purple;
+    transition: 0.2s;
+  }
+}
+
+// other styles
+::-webkit-input-placeholder {
+   color: $blue;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: $blue;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: $blue;
+}
+
+:-ms-input-placeholder {
+   color: $blue;
+}
+
 }
