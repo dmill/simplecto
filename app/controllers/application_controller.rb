@@ -6,4 +6,8 @@ class ApplicationController < ActionController::Base
   def after_sign_in_path_for(resource)
     questions_path
   end
+
+  def render_unauthorized
+    render text: "Unauthorized", status: :unauthorized
+  end
 end

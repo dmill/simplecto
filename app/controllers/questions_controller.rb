@@ -16,6 +16,9 @@ class QuestionsController < ApplicationController
   end
 
   def show
+    @question = Question.find(params[:id])
+
+    render_unauthorized unless @question.user == current_user
   end
 
   private
