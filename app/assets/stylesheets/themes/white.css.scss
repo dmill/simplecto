@@ -53,3 +53,58 @@ a:hover {
 .devise-shared-link {
   margin: 1rem 0;
 }
+
+input {
+  width: 100%;
+  margin: 0.5rem 0;
+
+  &:not([type='submit']) {
+    border-radius: 3px;
+    height: 40px;
+    padding: 2.5rem 1.5rem;
+    font-size: 2rem;
+    font-weight: 300;
+    box-shadow: none;
+    border: 1px solid #ccc;
+    color: #232323;
+  }
+}
+
+textarea {
+  width: 100%;
+  margin: 0.5rem 0;
+  height: 200px;
+  border-radius: 3px;
+  padding: 1rem 1.5rem;
+  font-size: 2rem;
+  font-weight: 300;
+  box-shadow: none;
+  border: 1px solid #ccc;
+  color: #232323;
+  resize: none;
+}
+
+.field {
+  width: 100%;
+}
+
+.field.half-width {
+  width: calc(50% - 0.5rem);
+  float: left;
+
+  &.first {
+    margin-right: 1rem;
+  }
+}
+
+.checkbox {
+  float: left;
+  width: auto;
+}
+
+.checkbox-label {
+  float: left;
+  line-height: 4rem;
+  margin: 4px 6px;
+  color: #555;
+}

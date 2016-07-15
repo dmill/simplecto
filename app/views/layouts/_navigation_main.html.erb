@@ -1,0 +1,26 @@
+<nav>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2">
+        <span class="logo">SimpleCTO</span>
+      </div>
+      <div class="col-md-10">
+        <div class="nav-right">
+          <% if user_signed_in? %>
+            <span class="nav-button"><%= link_to 'Browse', questions_path %></span>
+            <span class="nav-button">My Questions</span>
+            <span class="static nav-button">|</span>
+            <span class="nav-button secondary"><%= fa_icon "phone-square" %> Call a Consultant</span>
+            <span class="secondary nav-button"><%= link_to 'Log out', destroy_user_session_path, :method=>'delete' %></span>
+          <% else %>
+            <span class="nav-button"><%= fa_icon "phone-square" %> Call a Consultant</span>
+            <a href="https://blog.simplecto.com" class="nav-button">Blog</a>
+            <span class="static nav-button">|</span>
+            <span class="secondary nav-button"><%= link_to 'Sign up', new_user_registration_path %></span>
+            <span class="secondary nav-button"><%= link_to 'Log in', new_user_session_path %></span>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
