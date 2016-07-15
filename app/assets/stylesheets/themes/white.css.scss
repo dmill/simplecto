@@ -2,7 +2,8 @@ $black: #1c1c1f;
 $grey: #dfe0e6;
 $red: #E60038;
 $red-hl: #f83364;
-$purple: #843cd1;
+$purple-hl: #843cd1;
+$purple: #5e239d;
 
 body {
   background-color: #fff;
@@ -22,7 +23,7 @@ h2 {
 
 .button.pill {
   border-radius: 100px;
-  background-color: $red;
+  background-color: $purple;
   height: 35px;
   padding: 0 35px;
   color: #fff;
@@ -35,15 +36,16 @@ h2 {
   line-height: 35px;
 
   &:hover {
-    background-color: $red-hl;
+    background-color: $purple-hl;
     transition: 0.2s;
   }
 }
 
 a {
-  color: $red;
+  color: $purple;
+  transition: 0.2s;
 }
 
 a:hover {
-  color: $red-hl;
+  color: $purple-hl;
 }
