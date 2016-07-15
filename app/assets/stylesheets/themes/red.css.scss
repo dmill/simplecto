@@ -1,5 +1,6 @@
 $red: #E60038;
 $red-hl: #f83364;
+$red-fade: #f26c67;
 
 $black: #2e2f33;
 
@@ -27,10 +28,11 @@ nav {
   .nav-button {
     padding: 0 15px;
     cursor: pointer;
-    color: $grey-dark;
+    color: $red-fade;
 
     a:link, a:active, a:visited {
       color: inherit;
+      transition: 0.2s;
 
       &.logo {
         color: $red;

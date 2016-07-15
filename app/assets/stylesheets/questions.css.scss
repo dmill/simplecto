@@ -1,5 +1,6 @@
 #question-show {
   background: #fafafa;
+  height: 100%;
 
   h1 {
     font-family: "Raleway", sans-serif;
@@ -18,6 +19,7 @@
 
   .question-container {
     margin-top: 2rem;
+    background: #fafafa;
   }
 
   .text {
@@ -33,6 +35,17 @@
     font-family: "Lora", serif;
     font-size: 1.8rem;
     color: #484848;
+  }
+
+  .awaiting-answer {
+    font-size: 1.8rem;
+    color: #888;
+    font-family: "Lora";
+    border-radius: 3px;
+    border: 1px solid #eee;
+    background: #eee;
+    margin-bottom: -2.5rem;
+    padding: 1rem;
   }
 
   padding-bottom: 6rem;
