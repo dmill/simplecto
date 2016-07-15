@@ -10,9 +10,13 @@
         <div class="nav-right">
           <% if user_signed_in? %>
             <span class="nav-button"><%= link_to 'Browse', questions_path %></span>
-            <%= link_to "Ask", new_question_path, class: "nav-button" %>
+            <span class="nav-button">
+              <%= link_to "Ask", new_question_path %>
+            </span>
             <span class="static nav-button">|</span>
-            <span class="nav-button secondary"><%= fa_icon "phone-square" %> Call a Consultant</span>
+            <span class="nav-button secondary">
+              <a href=""><%= fa_icon 'phone-square' %> Call a Consultant</a>
+            </span>
             <span class="secondary nav-button"><%= link_to 'Log out', destroy_user_session_path, :method=>'delete' %></span>
           <% else %>
             <span class="nav-button"><%= fa_icon "phone-square" %> Call a Consultant</span>
