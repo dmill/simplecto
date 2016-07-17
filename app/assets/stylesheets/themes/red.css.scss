@@ -1,5 +1,5 @@
 $red: #E60038;
-$red-hl: #f83364;
+$red-hl: #f24770;
 $red-fade: #f26c67;
 
 $black: #2e2f33;
@@ -89,6 +89,13 @@ header {
 
 h2 {
   font-size: 24px;
+}
+.button.pill.red {
+  background-color: $red;
+
+  &:hover {
+    background: $red-hl;
+  }
 }
 
 .button.pill {

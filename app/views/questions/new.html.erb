@@ -9,7 +9,7 @@
       <%= form_for @question, url: {action: "create"}, html: {class: "form"} do |f| %>
         <%= f.text_field :title, placeholder: "Subject" %>
         <%= f.text_area :question_text, placeholder: "Describe the issue" %>
-        <%= f.submit "Get an Answer", class: "button pill" %>
+        <%= f.submit "Get an Answer", class: "button pill red" %>
       <% end %>
     </div>
   </div>
