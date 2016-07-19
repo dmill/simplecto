@@ -2,7 +2,7 @@ class QuestionsController < ApplicationController
   before_action :authenticate_user!
 
   def index
-      @questions = Question.all.select { |question| !question.answer_video.nil? }
+    params[:user_id] ? render_user_questions : render_all_questions
   end
 
   def new
@@ -25,5 +25,17 @@ class QuestionsController < ApplicationController
 
   def question_params
     params.require(:question).permit(:title, :question_text)
+  end
+
+  def render_user_questions
+    if params[:user_id].to_i == current_user.id
+      @questions = current_user.questions
+    else
+      render html: "Unauthorized", status: :unauthorized
+    end
+  end
+
+  def render_all_questions
+    @questions = Question.all.select { |question| question.answer_video }
   end
 end
