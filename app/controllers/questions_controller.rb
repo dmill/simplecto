@@ -31,7 +31,7 @@ class QuestionsController < ApplicationController
     if params[:user_id].to_i == current_user.id
       @questions = current_user.questions
     else
-      render html: "Unauthorized", status: :unauthorized
+      render_unauthorized
     end
   end
 

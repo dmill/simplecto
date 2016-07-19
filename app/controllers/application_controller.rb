@@ -8,6 +8,6 @@ class ApplicationController < ActionController::Base
   end
 
   def render_unauthorized
-    render text: "Unauthorized", status: :unauthorized
+    render html: "Unauthorized", status: :unauthorized
   end
 end
