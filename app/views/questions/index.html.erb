@@ -7,7 +7,6 @@
       <h1 class="sub-nav">Most Popular Answers</h1>
       <%= link_to "My Questions", user_questions_path(current_user), class: "sub-nav" %>
       <% @questions.each do |question| %>
-        <% 10.times do %>
         <div class="question-preview">
           <span class="video-thumbnail">
             <iframe width="240" height="134" src="<%= question.answer_video %>" frameborder="0"></iframe>
@@ -15,7 +14,6 @@
           <a href="<%= question_path(question) %>" class="question-title"><%= question.title %></a>
           <a href="<%= question_path(question) %>" class="question-body clear-fix"><%= question.question_text[0...200] %>...</a>
         </div>
-        <% end %>
       <% end %>
     </div>
   </div>

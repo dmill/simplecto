@@ -2,7 +2,7 @@ class QuestionsController < ApplicationController
   before_action :require_login
 
   def index
-    @questions = Question.all.select { |question| !question.answer_video.nil? }
+      @questions = Question.all.select { |question| !question.answer_video.nil? }
   end
 
   def new
