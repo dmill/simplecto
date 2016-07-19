@@ -3,6 +3,8 @@ Rails.application.routes.draw do
 
   root to: "home#index"
 
+  get 'software_architecture' => 'home#software_architecture'
+
   devise_for :users, controllers: { registrations: "users/registrations" }
 
   resources :questions
@@ -11,5 +13,7 @@ Rails.application.routes.draw do
     resources :questions, only: [:index]
   end
 
-  resources :charges, only: [:create, :index]
+  resources :charges, only: [:create]
+
+  resources :subscriptions, only: [:create, :new]
 end

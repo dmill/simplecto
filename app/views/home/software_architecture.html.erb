@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300' rel='stylesheet' type='text/css'>
+  <title>Software Architecture Overview</title>
+</head>
+<body style="margin: 0;">
+<div id="software-architecture">
+  <h1>Software Architecture Overview</h1>
+  <h2>Learn the next steps you need to take in getting your software idea developed</h2>
+  <div class="left">
+    <p>This PDF has saved entrepreneurs thousands of dollars and hundreds of hours by setting them on the right path to get their idea developed.</p>
+    <%= form_tag charges_path do %>
+      <%= hidden_field_tag "product", "one_seventy_five" %>
+      <script
+        src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+        data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+        data-amount="17500"
+        data-name="Software Architecture PDF"
+        data-description="PDF File Sent to Your Email"
+        data-image="images/stripe-icon.png"
+        data-zip-code="true"
+        data-locale="auto"
+        data-label="Purchase Now">
+      </script>
+    <% end %>
+    <p>It is just too easy for an entrepreneur without a technical background to get conned by a predatory software development team.</p>
+    <p>Even developers with high ratings and reviews on marketplaces like UpWork or oDesk have proven themselves to nickle and dime the project owners and to constantly miss deadline after deadline.</p>
+    <p>Armed with the knowledge in this PDF, you will learn your business idea inside and out allowing you to prevent shady developers from pulling your leg.</p>
+    <p>You will have:</p>
+    <ul>
+      <li>Development Timeline - to ensure your features are built in the right order</li>
+      <li>Payment Milestones - to ensure you only pay the developer for high-quality, working code</li>
+      <li>And a high-level understanding of the software involved in your application so you can truly understand your business idea</li>
+    </ul>
+    <p>With this know-how, you will be able to find the right development team for you, to get the job done on-time, and on-budget, with the features you envisioned.</p>
+    <%= form_tag charges_path do %>
+      <%= hidden_field_tag "product", "one_seventy_five" %>
+      <script
+        src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+        data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+        data-amount="17500"
+        data-name="Software Architecture PDF"
+        data-description="PDF File Sent to Your Email"
+        data-image="images/stripe-icon.png"
+        data-zip-code="true"
+        data-locale="auto"
+        data-label="Purchase Now">
+      </script>
+    <% end %>
+  </div>
+  <div class="right">
+    <h2>Sample Software Architecture Overview</h2>
+    <iframe src="https://simplecto.com/downloads/ZaeTae-Software-Architecture.pdf"
+    ></iframe>
+  </div>
+</div>
+</body>
+</html>

@@ -36,6 +36,9 @@ gem 'font-awesome-rails'
 # stripe for processing payments
 gem 'stripe', '~> 1.43'
 
+#Figaro for configuration management
+gem 'figaro', '~> 1.1', '>= 1.1.1'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
