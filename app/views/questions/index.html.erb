@@ -1,4 +1,20 @@
-<% @questions.each do |question| %>
-  <p><%= question.question_text %></p>
-  <p><%= question.answer_text %></p>
-<% end %>
+<div id="question-index">
+<%= render partial: "layouts/navigation_main" %>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <h1 class="sub-nav">Most Popular Answers</h1>
+      <%= link_to "My Questions", user_questions_path(current_user), class: "sub-nav" %>
+      <% @questions.each do |question| %>
+        <div class="question-preview">
+          <span class="video-thumbnail">
+            <iframe width="240" height="134" src="<%= question.answer_video %>" frameborder="0"></iframe>
+          </span>
+          <a href="<%= question_path(question) %>" class="question-title"><%= question.title %></a>
+          <a href="<%= question_path(question) %>" class="question-body clear-fix"><%= question.question_text[0...200] %>...</a>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>

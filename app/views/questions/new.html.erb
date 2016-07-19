@@ -1,7 +1,16 @@
-<h2>New Question</h2>
+<div id="question-new">
+<%= render partial: "layouts/navigation_main" %>
 
-<%= form_for @question, url: {action: "create"}, html: {class: "nifty_form"} do |f| %>
-  <%= f.text_field :title %>
-  <%= f.text_area :question_text, size: "60x12" %>
-  <%= f.submit "Ask" %>
-<% end %>
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2 centered">
+      <h2>Ask an Expert</h2>
+
+      <%= form_for @question, url: {action: "create"}, html: {class: "form"} do |f| %>
+        <%= f.text_field :title, placeholder: "Subject" %>
+        <%= f.text_area :question_text, placeholder: "Describe the issue" %>
+        <%= f.submit "Get an Answer", class: "button pill red" %>
+      <% end %>
+    </div>
+  </div>
+</div>

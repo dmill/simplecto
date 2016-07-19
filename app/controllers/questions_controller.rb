@@ -2,7 +2,7 @@ class QuestionsController < ApplicationController
   before_action :authenticate_user!
 
   def index
-    @questions = current_user.questions
+      @questions = Question.all.select { |question| !question.answer_video.nil? }
   end
 
   def new

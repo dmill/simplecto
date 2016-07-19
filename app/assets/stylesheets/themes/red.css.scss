@@ -1,0 +1,185 @@
+$red: #E60038;
+$red-hl: #f24770;
+$red-fade: #f26c67;
+
+$black: #2e2f33;
+
+$blue: #9bf0e1;
+$grey: #dfe0e6;
+$grey-dark: #7e7e7e;
+
+$purple-hl: #843cd1;
+$purple: #5e239d;
+
+body {
+  background-color: $red;
+}
+
+nav {
+  border-top: 2px solid $red;
+  height: 6rem;
+  background: #fff;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.2);
+  line-height: 6rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  font-family: "Raleway", sans-serif;
+
+  .nav-button {
+    padding: 0 15px;
+    cursor: pointer;
+    color: $red-fade;
+
+    a:link, a:active, a:visited {
+      color: inherit;
+      transition: 0.2s;
+
+      &.logo {
+        color: $red;
+      }
+    }
+
+    a:hover {
+      color: $red;
+    }
+  }
+
+  .nav-button.static {
+    color: #c1c3c6;
+  }
+
+  .nav-right {
+    float: right;
+  }
+}
+
+// sections
+section {
+  position: relative;
+  padding: 40px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+
+  h2 {
+    margin-bottom: -20px;
+  }
+}
+
+section.white {
+  background-color: #fff;
+}
+
+section.black {
+  background: url('/images/shattered.gif');
+  background-color: $black;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+}
+
+body {
+  background-color: #fff;
+  color: $black;
+  font-family: "Lato", sans-serif;
+}
+
+header {
+  height: 80px;
+  line-height: 80px;
+  border-bottom: 1px solid $grey;
+}
+
+h2 {
+  font-size: 24px;
+}
+.button.pill.red {
+  background-color: $red;
+
+  &:hover {
+    background: $red-hl;
+  }
+}
+
+.button.pill {
+  border-radius: 100px;
+  background-color: $purple;
+  height: 35px;
+  padding: 0 35px;
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+  letter-spacing: 1px;
+  line-height: 35px;
+
+  &:hover {
+    background-color: $purple-hl;
+    transition: 0.2s;
+  }
+}
+
+.devise-shared-link {
+  margin: 1rem 0;
+}
+
+input {
+  width: 100%;
+  margin: 0.5rem 0;
+
+  &:not([type='submit']) {
+    border-radius: 3px;
+    height: 40px;
+    padding: 2.5rem 1.5rem;
+    font-size: 2rem;
+    font-weight: 300;
+    box-shadow: none;
+    border: 1px solid #ccc;
+    color: #232323;
+  }
+}
+
+textarea {
+  width: 100%;
+  margin: 0.5rem 0;
+  height: 200px;
+  border-radius: 3px;
+  padding: 1rem 1.5rem;
+  font-size: 2rem;
+  font-weight: 300;
+  box-shadow: none;
+  border: 1px solid #ccc;
+  color: #232323;
+  resize: none;
+}
+
+.field {
+  width: 100%;
+}
+
+.field.half-width {
+  width: calc(50% - 0.5rem);
+  float: left;
+
+  &.first {
+    margin-right: 1rem;
+  }
+}
+
+.checkbox {
+  float: left;
+  width: auto;
+}
+
+.checkbox-label {
+  float: left;
+  line-height: 4rem;
+  margin: 4px 6px;
+  color: #555;
+}
+
+.logo {
+  img {
+    height: 26px;
+    margin-top: -6px;
+  }
+}

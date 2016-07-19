@@ -1,44 +1,16 @@
-<!-- background -->
-
+<div id="landing-page">
 <div id="background"></div>
 
-<!-- navigation -->
-
-<nav>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-2">
-        <span class="logo">SimpleCTO</span>
-      </div>
-      <div class="col-md-10">
-        <div class="nav-right">
-          <% if user_signed_in? %>
-            <span class="nav-button"><%= link_to 'My Questions', questions_path %></span>
-          <% end %>
-          <span class="nav-button"><%= fa_icon "phone-square" %> Call a Consultant</span>
-          <span class="nav-button">Blog</span>
-          <span class="static nav-button">|</span>
-          <% if user_signed_in? %>
-            <span class="secondary nav-button"><%= link_to 'Edit account', edit_user_registration_path %></span>
-            <span class="secondary nav-button"><%= link_to 'Sign out', destroy_user_session_path, :method=>'delete' %></span>
-          <% else %>
-            <span class="secondary nav-button"><%= link_to 'Sign up', new_user_registration_path %></span>
-            <span class="secondary nav-button"><%= link_to 'Log in', new_user_session_path %></span>
-          <% end %>
-        </div>
-      </div>
-    </div>
-  </div>
-</nav>
+<%= render partial: "layouts/navigation_main" %>
 
 <!-- hero -->
 
 <section class="hero container-fluid">
   <div class="row">
     <div class="col-md-offset-1 col-md-10">
-      <h1>Got a Tech Question?</h1>
-      <h2 class="white">Get a Video Answer from an Industry Expert</h2>
-      <span class="button pill">ask a question</span>
+      <h1>Got Tech Hurdles?</h1>
+      <h2 class="white">solve them with a video answer from an industry expert</h2>
+      <span class="button pill">get an answer</span>
     </div>
   </div>
 </section>
@@ -54,7 +26,7 @@
       <div class="col-md-6">
         <h2 class="purple">How it Works</h2>
         <h3 class="purple">Ask</h3>
-        <p>Submit the technical questions you need answered or insight on.</p>
+        <p>Submit technical questions or describe the challenge you're facing.</p>
         <h3 class="purple">Receive</h3>
         <p>An industry expert will record a personal video response to your question.</p>
         <h3 class="purple">Browse</h3>
@@ -88,7 +60,7 @@
         <div class="expert-col">
           <h4 class="white">Mysterious Guest</h4>
           <img class="expert circle" src="/images/guest.jpg" />
-          <p class="white">Every expert recognizes that he can't know everything. That's why we invite tech experts from around the world to provide answers to the questions that are outside our realm of expertise.</p>
+          <p class="white">Every expert recognizes that he or she can't know everything. That's why we invite tech experts from around the world to provide answers to the questions that are outside our realm of expertise.</p>
         </div>
       </div>
     </div>
@@ -105,7 +77,7 @@
         <h3 class="blue">Hiring & Recruiting</h3>
         <p class="white">Having trouble hiring developers? Pick our brains and learn our critieria on how we choose who to work with and who to ignore.</p>
         <h3 class="blue">Technology</h3>
-        <p class="white">Starting a tech business? Ask an industry expert the best way to move forward with your software idea.</h3>
+        <p class="white">Starting a tech business? Ask an industry expert the best way to move forward with your software idea.</p>
         <h3 class="blue">Management</h3>
         <p class="white">Learn the best practices in managing development teams to get software built on time and within budget.</p>
       </div>
@@ -136,3 +108,4 @@
     </div>
   </div>
 </section>
+</div>

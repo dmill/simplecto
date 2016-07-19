@@ -1,0 +1,26 @@
+#authentication {
+  font-size: 1.5rem;
+
+  .logo {
+    font-size: 3.8rem;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+  }
+
+  .body {
+    margin-top: 2rem;
+  }
+
+  .devise-links {
+    margin-top: 3rem;
+  }
+
+  a:link, a:visited, a:active {
+    color: $purple;
+  }
+
+  a:hover {
+    color: $purple-hl;
+  }
+}
+
