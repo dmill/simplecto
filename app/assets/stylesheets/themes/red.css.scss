@@ -178,8 +178,14 @@ textarea {
 }
 
 .logo {
-  img {
-    height: 26px;
-    margin-top: -6px;
+  .logo-image {
+    float: left;
+    width: 27px;
+    height: 50px;
+    margin: 0px 7px 0;
+    background: url('/images/logo-small-red.png') center/27px 26px no-repeat;
+  }
+  a:link, a:visited, a:hover, a:active {
+    color: $red-hl;
   }
 }
