@@ -7,6 +7,10 @@
       <h1><%= @question.title %></h1>
       <% if @question.answer_video %>
         <iframe width="100%" height="422" src="<%= @question.answer_video %>" frameborder="0" allowfullscreen></iframe>
+      <% elsif current_user.questions.count > 1 && !current_user.subscribed %>
+        <div class="awaiting-answer">
+          <%= fa_icon "clock-o" %> You've already used your free first question, in order to receive another answer <%= link_to "subscribe here", new_subscription_path %>.
+        </div>
       <% else %>
         <div class="awaiting-answer">
           <%= fa_icon "clock-o" %> This question hasn't been answered yet. Please wait while one of our experts records a response.
