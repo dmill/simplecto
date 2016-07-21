@@ -12,13 +12,19 @@ class QuestionsController < ApplicationController
   def create
     @question = current_user.questions.create(question_params)
 
-    render action: "show"
+    if !current_user.subscribed && current_user.questions.count > 1
+      redirect_to new_subscription_path
+    else
+      render action: "show"
+    end
   end
 
   def show
     @question = Question.find(params[:id])
 
-    render_unauthorized unless @question.user == current_user
+    unless @question.user == current_user || current_user.subscribed
+      redirect_to new_subscription_path
+    end
   end
 
   private
@@ -32,7 +38,7 @@ class QuestionsController < ApplicationController
       @questions = current_user.questions
       render "user_questions_index"
     else
-      render_unauthorized
+      redirect_to new_subscription_path
     end
   end
 
