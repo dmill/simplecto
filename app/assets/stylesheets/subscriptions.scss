@@ -5,12 +5,14 @@
   width: 100%;
   position: fixed;
   z-index: 0;
+  overflow-y: scroll;
 
   h1 {
     font-family: "Raleway", sans-serif;
     font-size: 72px;
     font-weight: 600;
     color: #fff;
+    margin-bottom: 10px;
   }
 
   h2 {
@@ -20,11 +22,12 @@
     font-size: 72px;
     margin-bottom: 10px;
     letter-spacing: -4px;
+    margin-top: 20px;
   }
 
   h3 {
-    font-family: "lato", sans-serif;
-    color: #fff;
+    font-family: "Lato", sans-serif;
+    color: $red-fade;
     font-weight: 100;
     margin-top: -20px;
     font-size: 24px;
@@ -33,17 +36,17 @@
 
   .hero {
     text-align: center;
-    height: 100vh;
   }
 
-  .subscribe {
-    background: $red-fade;
+  .subscribe-container {
+    // background: $red-fade;
+    border: 2px solid $red-fade;
     border-radius: 10px;
     padding-bottom: 20px;
   }
 
   ul {
-    color: #424143;
+    color: #fff;
     margin-left: -10px;
     list-style-type: none;
     margin-bottom: 25px;
