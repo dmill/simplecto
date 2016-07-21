@@ -30,6 +30,7 @@ class QuestionsController < ApplicationController
   def render_user_questions
     if params[:user_id].to_i == current_user.id
       @questions = current_user.questions
+      render "user_questions_index"
     else
       render_unauthorized
     end

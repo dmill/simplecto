@@ -189,3 +189,13 @@ textarea {
     color: $red-hl;
   }
 }
+
+.accent {
+  border: 2px solid $red-fade;
+  border-radius: 3px;
+  padding: 0.5rem 1rem;
+
+  &:hover {
+    border: 2px solid $red;
+  }
+}
