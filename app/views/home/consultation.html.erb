@@ -1,0 +1,60 @@
+<script>
+  window.twttr = (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0],
+      t = window.twttr || {};
+    if (d.getElementById(id)) return t;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "https://platform.twitter.com/widgets.js";
+    fjs.parentNode.insertBefore(js, fjs);
+    t._e = [];
+    t.ready = function(f) {
+      t._e.push(f);
+    };
+    return t;
+  }(document, "script", "twitter-wjs"));
+</script>
+
+<div id="consultation">
+<div id="background"></div>
+
+<%= render partial: "layouts/navigation_main" %>
+
+<!-- hero -->
+
+<section class="hero container-fluid">
+  <div class="row">
+    <h1>Need to Talk to an Expert?</h1>
+    <h2>schedule a time to chat with us:</h2>
+    <div class="col-md-offset-2 col-md-4">
+      <!-- Calendly inline widget begin -->
+      <div class="calendly-inline-widget" data-url="https://calendly.com/awong/60min" style="min-width:320px;height:600px;"></div>
+      <script type="text/javascript" src="https://calendly.com/assets/external/widget.js"></script>
+      <!-- Calendly inline widget end -->
+      <p class="price">starting at $159/hour</p>
+    </div>
+    <div class="col-md-4">
+      <!-- Calendly inline widget begin -->
+      <div class="calendly-inline-widget" data-url="https://calendly.com/dougmill/60min" style="min-width:320px;height:600px;"></div>
+      <script type="text/javascript" src="https://calendly.com/assets/external/widget.js"></script>
+      <!-- Calendly inline widget end -->
+      <p class="price">starting at $150/hour</p>
+    </div>
+  </div>
+</section>
+
+<!-- how it works -->
+
+<section class="white">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12 centered">
+        <a class="twitter-timeline" href="https://twitter.com/search?q=%40SimpleCTO" data-widget-id="739242173913280513">Tweets about @SimpleCTO</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+      </script>
+      </div>
+    </div>
+  </div>
+</section>
+
+</div>

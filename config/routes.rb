@@ -3,7 +3,9 @@ Rails.application.routes.draw do
 
   root to: "home#index"
 
-  get 'software_architecture' => 'home#software_architecture'
+  get "software-architecture" => "home#software_architecture"
+
+  get "consultation" => "home#consultation"
 
   devise_for :users, controllers: { registrations: "users/registrations" }
 

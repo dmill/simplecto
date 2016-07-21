@@ -1,0 +1,275 @@
+#consultation {
+
+#background {
+  background: url('/images/collage.png');
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 0;
+}
+
+// navigation
+nav {
+  height: 60px;
+  background-color: rgba(23,23,23,0.8);
+  position: fixed;
+  display: block;
+  border: none;
+  box-shadow: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  line-height: 60px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: "Raleway", sans-serif;
+
+  .logo {
+    .logo-image {
+      float: left;
+      width: 27px;
+      margin: 3px 7px 0;
+      height: 50px;
+      background: url('/images/logo-small-white.png') center/27px 26px no-repeat;
+    }
+    a:link, a:visited, a:hover, a:active {
+      color: #fff;
+    }
+  }
+
+
+  .nav-button {
+    padding: 0 15px;
+    cursor: pointer;
+
+    a:link, a:hover, a:active, a:visited {
+      color: inherit;
+    }
+
+
+    &:hover {
+      color: $blue;
+    }
+  }
+
+  .nav-button {
+    color: #fff;
+  }
+
+  .nav-button.static {
+    color: #c1c3c6;
+  }
+
+  .nav-button.secondary {
+    color: #c1c3c6;
+
+    &:hover {
+      color: $blue;
+    }
+  }
+
+  .nav-right {
+    float: right;
+  }
+}
+
+h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 72px;
+  color: #fff;
+}
+
+h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 48px;
+  color: $red;
+  font-weight: 800;
+}
+
+h3 {
+  font-family: "Raleway", sans-serif;
+  font-size: 36px;
+  color: $red;
+  margin-bottom: 0;
+}
+
+h4 {
+  font-family: "Raleway", sans-serif;
+  color: $black;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+p {
+  color: #fff;
+  font-family: "Lato", serif;
+  font-size: 22px;
+  margin-top: 10px;
+}
+
+h2.white, h3.white, h4.white, p.white {
+  color: #fff;
+}
+
+h2.purple, h3.purple, h4.purple {
+  color: $purple;
+}
+
+h3.blue {
+  color: #9bf0e1;
+}
+
+h2.black {
+  color: $black;
+}
+
+.hero {
+  text-align: center;
+
+  h2 {
+    margin-top: -20px;
+    font-size: 36px;
+    margin-bottom: 80px;
+    color: #fff;
+  }
+}
+
+.experts {
+  .expert-col {
+    padding: 20px;
+  }
+
+  .expert {
+    width: 80%;
+    margin-bottom: 40px;
+  }
+
+  p {
+    font-size: 18px;
+    font-weight: 300;
+  }
+}
+
+section.lead-capture {
+  padding-bottom: 80px;
+
+  h1 {
+    margin-bottom: 10px;
+  }
+}
+
+.form {
+  margin-top: 40px;
+
+  input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: none;
+    font-family: "Raleway", sans-serif;
+    color: #fff;
+    font-size: 32px;
+    font-weight: 700;
+    height: 60px;
+    margin-bottom: 30px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .button {
+    margin-top: 40px;
+    display: inline-block;
+  }
+}
+
+.img-offset {
+  margin-top: calc(35%);
+  width: 80%;
+}
+
+.img-questions {
+  margin-top: 12%;
+  width: 90%;
+  float: right;
+}
+
+.img-bottom {
+  padding-bottom: -80px;
+}
+
+// buttons
+.button.pill {
+  border: 3px solid #fff;
+  border-radius: 100px;
+  height: 50px;
+  background: none;
+  padding: 12px 35px;
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+  letter-spacing: 1px;
+
+  &:hover {
+    background-color: #fff;
+    color: $red;
+    transition: 0.2s;
+  }
+}
+
+.button.pill-red {
+  border-radius: 100px;
+  background-color: $red;
+  height: 50px;
+  padding: 15px 35px;
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+  letter-spacing: 1px;
+
+  &:hover {
+    background-color: #fff;
+    color: $purple;
+    transition: 0.2s;
+  }
+}
+
+.main-cta {
+  margin-top: 4rem;
+  display: inline-block;
+}
+
+// other styles
+::-webkit-input-placeholder {
+   color: $blue;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: $blue;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: $blue;
+}
+
+:-ms-input-placeholder {
+   color: $blue;
+}
+
+
+}
+
+.price {
+  color: #fff;
+  font-size: 2rem;
+}
