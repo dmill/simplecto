@@ -17,6 +17,9 @@
           <%= link_to "Ask", new_question_path, class: "accent" %>
         </span>
         <span class="static nav-button">|</span>
+        <span class="nav-button">
+          <%= link_to "Subscribe", new_subscription_path %>
+        </span>
         <a href="<%= consultation_path %>" class="secondary nav-button">
           <%= fa_icon "phone-square" %> Call a Consultant
         </a>
@@ -25,6 +28,10 @@
         </span>
       <% else %>
         <a href="<%= consultation_path %>" class="nav-button">
+        <span class="nav-button">
+          <%= link_to "Subscribe", new_subscription_path %>
+        </span>
+        <span class="nav-button">
           <%= fa_icon "phone-square" %> Call a Consultant
         </a>
         <a href="https://blog.simplecto.com" class="nav-button">Blog</a>

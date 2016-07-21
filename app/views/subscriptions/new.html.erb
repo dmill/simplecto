@@ -1,34 +1,40 @@
-<div id="authentication">
-<header class="centered">
-  <%= link_to "SimpleCTO", :root, class: "logo" %>
-</header>
+<div id="subscription-new">
+  <%= render partial: "layouts/navigation_main" %>
 
-<div class="container body">
+<section class="hero container-fluid">
   <div class="row">
-    <div class="col-md-6 col-md-offset-3 centered">
+    <div class="col-md-offset-1 col-md-10">
       <% if !current_user.subscribed %>
-        <%= form_tag subscriptions_path do %>
-          <%= hidden_field_tag "product", "monthly_subscription" %>
-          <script
-            src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-            data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
-            data-amount="15000"
-            data-name="Unlimited Video Q&A"
-            data-description="Risk Free - Cancel at Anytime"
-            data-zip-code="true"
-            data-locale="auto"
-            data-email=<%= current_user.email %>
-            data-panel-label="Subscribe"
-            data-label="Subscribe">
-          </script>
-        <% end %>
+        <h1>Subscribe Now</h1>
+        <div class="subscribe col-md-offset-4 col-md-4">
+          <h2>$150</h2>
+          <h3>per month</h3>
+          <ul>
+            <li>Ask Unlimited Software Questions</li>
+            <li>Receive Expert Video Answers</li>
+            <li>Full Access to Q&A Library</li>
+          </ul>
+          <%= form_tag subscriptions_path do %>
+            <%= hidden_field_tag "product", "monthly_subscription" %>
+            <script
+              src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+              data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+              data-image="/images/logo-small-red.png"
+              data-amount="15000"
+              data-name="SimpleCTO"
+              data-description="Monthly Platform Subscription"
+              data-zip-code="true"
+              data-locale="auto"
+              data-email=<%= current_user.email %>
+              data-panel-label="Subscribe"
+              data-label="Purchase Now">
+            </script>
+          <% end %>
+        </div>
       <% else %>
         <h1>You are Already Subscribed</h1>
       <% end %>
     </div>
   </div>
+</section>
 </div>
-</div>
-
-
-
