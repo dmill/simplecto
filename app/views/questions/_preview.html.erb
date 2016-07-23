@@ -1,0 +1,12 @@
+<% if question.answer_video
+    youtube_id = /youtu.be\/(.*)/.match(question.answer_video)[1]
+  end
+%>
+
+<div class="question-preview">
+  <span class="video-thumbnail">
+    <img src="http://i1.ytimg.com/vi/<%= youtube_id %>/mqdefault.jpg" />
+  </span>
+  <a href="<%= question_path(question) %>" class="question-title"><%= question.title %></a>
+  <a href="<%= question_path(question) %>" class="question-body clear-fix"><%= question.question_text[0...200] %>...</a>
+</div>
