@@ -2,6 +2,7 @@ class ChargesController < ApplicationController
 
   AMOUNTS = {
     fifty: "5000",
+    seventy_five: "7500",
     one_fifty: "15000",
     one_seventy_five: "17500"
   }.with_indifferent_access.freeze
