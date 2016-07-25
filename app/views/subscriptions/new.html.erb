@@ -1,12 +1,13 @@
 <div id="subscription-new">
-  <%= render partial: "layouts/navigation_main" %>
+
+<%= render partial: "layouts/navigation_main" %>
 
 <section class="hero container-fluid">
   <div class="row">
-    <div class="col-md-offset-1 col-md-10">
-      <% if !current_user.subscribed %>
-        <h1>Subscribe Now</h1>
-        <div class="subscribe col-md-offset-4 col-md-4">
+    <div class="col-md-offset-3 col-md-6">
+      <div class="subscribe-container">
+        <% if !current_user.subscribed %>
+          <h1>Subscribe Now</h1>
           <h2>$150</h2>
           <h3>per month</h3>
           <ul>
@@ -27,14 +28,15 @@
               data-locale="auto"
               data-email=<%= current_user.email %>
               data-panel-label="Subscribe"
-              data-label="Purchase Now">
+              data-label="Get Unlimited Answers">
             </script>
           <% end %>
-        </div>
-      <% else %>
-        <h1>You are Already Subscribed</h1>
-      <% end %>
+        <% else %>
+          <h1>You are Already Subscribed</h1>
+        <% end %>
+      </div>
     </div>
   </div>
 </section>
+
 </div>
