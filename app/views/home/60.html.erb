@@ -1,0 +1,29 @@
+<div id="subscription-new">
+
+<section class="hero container-fluid">
+  <div class="row">
+    <div class="col-md-offset-3 col-md-6">
+      <div class="subscribe-container">
+          <h1>60-Minute Consultation</h1>
+          <h4>$150</h4>
+          <p>Satisfaction Guaranteed</p>
+          <%= form_tag charges_path do %>
+      <%= hidden_field_tag "product", "one_fifty" %>
+      <script
+        src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+        data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+        data-amount="15000"
+        data-name="60-Minute Consultation"
+        data-description="Andrew Wong"
+        data-image="images/andrew.jpeg"
+        data-zip-code="true"
+        data-locale="auto"
+        data-label="Pay Now">
+      </script>
+    <% end %>
+      </div>
+    </div>
+  </div>
+</section>
+
+</div>
