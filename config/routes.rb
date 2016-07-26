@@ -7,6 +7,8 @@ Rails.application.routes.draw do
 
   get "consultation" => "home#consultation"
 
+  get "30-minutes" => "home#30"
+
   devise_for :users, controllers: { registrations: "users/registrations" }
 
   resources :questions

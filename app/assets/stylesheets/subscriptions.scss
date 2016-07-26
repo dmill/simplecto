@@ -35,6 +35,15 @@
     margin-bottom: 25px;
   }
 
+  h4 {
+    font-family: "Raleway", sans-serif;
+    font-size: 54px;
+    font-weight: 600;
+    color: $red-fade  ;
+    margin-bottom: 10px;
+    margin-top: 0;
+  }
+
   .hero {
     text-align: center;
   }
@@ -57,5 +66,10 @@
     text-align: center;
     font-size: 16px;
     margin-top: 10px;
+  }
+
+  p {
+    color: #fff;
+    font-size: 16px;
   }
 }
