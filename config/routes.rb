@@ -5,6 +5,8 @@ Rails.application.routes.draw do
 
   get "software-architecture" => "home#software_architecture"
 
+  get "tech-lingo" => "home#tech_lingo"
+
   get "consultation" => "home#consultation"
 
   get "30-minutes" => "home#30"

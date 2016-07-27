@@ -1,0 +1,47 @@
+<div id="tech-lingo">
+  <script>
+    var terms = []
+    <% @lingoes.each do |lingo| %>
+      terms.push("<%= lingo.term %>")
+    <% end %>
+    getTerms(terms)
+  </script>
+
+  <%= render partial: "layouts/navigation_main" %>
+
+  <section class="header">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>SimpleCTO's&nbsp;Tech Lingo Cheatsheet</h1>
+          <h2>A Glossary of Software Terms & Jargon</h2>
+        </div>
+      </div>
+      <div class="logo"><%= link_to "SimpleCTO", root_path %></div>
+      <div class="search-container row">
+        <input id="terms-search" class="search" type="search" placeholder="Search for a Term">
+        <div class="search-button"><%= fa_icon "search" %></div>
+      </div>
+    </div>
+    <div id="header-bottom"></div>
+  </section>
+
+  <% lingoes = @lingoes.order(:term).group_by {|l| l.term[0].upcase} %>
+
+  <section class="lingoes-container container">
+  <% lingoes.each do |letter, sublingoes| %>
+    <section class="letter-section">
+      <div class="letter-heading row">
+        <div class="letter col-md-1"><%= letter %></div>
+      </div>
+    <% sublingoes.each do |lingo| %>
+      <% lingo_id = lingo.term.gsub(/\s/, "-") %>
+      <div class="term-row row" id="<%= lingo_id %>">
+        <div class="term col-md-3"><strong><%= lingo.term %></strong></div>
+        <div class="definition col-md-9"><%= lingo.definition %></div>
+      </div>
+    <% end %>
+    </section>
+  <% end %>
+  </section>
+</div>

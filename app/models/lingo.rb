@@ -1,0 +1,2 @@
+class Lingo < ApplicationRecord
+end

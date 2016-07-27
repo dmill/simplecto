@@ -33,6 +33,8 @@ gem 'jbuilder', '~> 2.5'
 gem 'devise', '~> 4.2'
 
 gem 'font-awesome-rails'
+
+gem 'jquery-ui-rails'
 # stripe for processing payments
 gem 'stripe', '~> 1.43'
 
@@ -60,3 +62,4 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 ruby '2.3.1'
+

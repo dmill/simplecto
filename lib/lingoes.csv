@@ -1,0 +1,91 @@
+.NET,
+Amazon S3,"Simple Storage Service - a cloud-based service offered by Amazon.com for file storage. S3 is very useful for storing files like images, videos, and PDF documents, and is usually much cheaper and less prone to downtime or data loss than other options."
+Android,
+Angular,"Angular.js is one of the most popular frameworks for building web frontends in JavaScript. Other options include React.js, Ember.js, and Backbone.js."
+Ansible,
+API,"Application Programming Interface. API can be used to describe any software that is used by other software or by a developer. For example, a programming language is an API. In common language, API normally refers to a set of protocols for using a company's service over the internet. For example, a developer can integrate communication with an API provided by Stripe to access and use their system for processing credit card payments. "
+app,Short for application. Commonly used to specifically describe a mobile application. Web applications alike can also be referred to as apps.
+authentication,"The process of confirming the identity of a user. When a user submits their username and password, the process of matching and verifiying these is authentication. Not to be confused with the the related process of authorization."
+authorization,"The process of checking the permissions of a user to perform a certain task. For example, on a web forum, admins have the permission to delete posts and ban users, while normal users do not. The process of granting and checking these permissions is authorization. Not to be confused with the related process of authentication."
+AWS,"Amazon Web Services. A web hosting service offered by Amazon that provides a number of different cloud-based software products. AWS allows customers to rent time on their servers to host their own web servers, databases, CDNs, etc. Using AWS saves time and money compared to buying a dedicated server, as customers can pay by-the-minute for the resources they need and can leave maintenance in the hands of AWS."
+backend,"The set of software that collectively responds to requests from the frontend over the internet. Generally consists of a web server, a database, and a file storage system among other components."
+Bootstrap,
+Braintree,
+browser,"A web browser is a type of software that allows users to access and interact with webpages over the internet. The most popular web browsers are Google Chrome, Mozilla Firefox, Apple Safari, and Microsoft Internet Explorer/Edge."
+C/C++,
+C#,
+cache,
+CDN,"Content Delivery Network. CDNs are used to temporarily store content like webpages, images, and video files in various locations in order to improve performance and reduce cost. For example, if you rent a server in Northern California to store images, it will take a comparitively long time for these images to reach users in other parts of the world. CDNs will store copies of these images in various other locations around the world. So, a user in London might access the images from a server 50 miles away rather than one 5000 miles away."
+Chef,
+client,"The client is what the user uses to interact with the application by sending requests to a server over the internet to retrieve, create, or update information. The most familiar types of clients on the internet are web browsers, mobile applications, and desktop applications."
+compiler/interpreter,
+CSS,"Cascading Style Sheets. CSS is a language used to add sytling to HTML web pages. HTML provides the structure, and CSS provides the look and feel. Colors, positioning, and other styling of webpages are made possible by CSS."
+CTO,An abbreviation for Chief Technology Officer. A CTO is an executive-level person in a company who is focused on developing and communicating the company's strategic technical direction. He/she is responsible for making sure the company continues to have the best technology offering in a dynamically-evolving highly-competitive space.
+database,"A database is a type of software that stores and retrieves information on a hard drive. It is responsible for saving things like email addresses, usernames, passwords, and other data the application needs. The two most common types of databases you'll encounter are relational databases and NoSQL databases."
+desktop app,"A type of software that lives and runs on a personal desktop or laptop computer. Examples are Google Chrome, Microsoft Word, and Adobe Photoshop."
+Django,A backend web application framework using the Python programming language. Django allows Python developers to write bug-free backends quickly and provides structure to their code. Django is comparable to Ruby on Rails for Python.
+Docker,
+Ember,"Ember.js is one of the most popular frameworks for building web frontends in JavaScript. Other options include React.js, Angular.js, and Backbone.js."
+Express,
+framework,"A framework for software can be thought of like a foundation and scaffolding for a building. Frameworks serve two main purposes for developers: providing common functionality automatically so time is not wasted reinvinting the wheel, and enforcing conventions that make code more understandable and less prone to bugs."
+frontend,"Another name for a User Interface or client. For software that uses the internet, the frontend is the UI that users interact with that requests and updates data through the backend."
+Git,Git is a version control system that keeps track of all the changes made to a codebase. This allows programmers to safely write new code because any changes can be undone and any previous versions of the software can be fully restored.
+GitHub,"GitHub is a company that provides hosting for code, allowing for developers to track changes and collaborate. All of the code hosted on Github uses the Git version control system."
+Go/Golang,"Go is a high-performance programming language developed at Google. Go programs are incredibly fast and web applications written in Go vastly outperform those written in alternatives like Ruby on Rails. The trade-off is that writing good software in Go is much more difficult than many of the alternatives. It is much harder to find developers to work in Go, and they are much more expensive. Go software may also take a much longer time to build, and is therefore only recommended for types of software where performance is a major concern."
+Heroku,"Heroku is a ""Platform as a Service"" that simplifies the process of using AWS for hosting web applications. It is more expensive than using AWS alone, but reduces the time required to deploy and update software. In many cases it reduces the need to employ a SysAdmin for managing AWS infrastructure, so the added cost is often a worthwhile trade-off."
+hosting,A hosting service allows companies to make their websites and software available over the internet. 
+HTML,HyperText Markup Language. Markup language means a language that is used to structure and format content on a webpage. HyperText means text that links to other webpages on the internet. Every website and web application on the internet is built using HTML.
+HTTP,"HyperText Transfer Protocol. HTTP can be thought of as the language of the web, and allows different computers to talk with one another and exchange information over the internet. The most common form of information that is exchanged using HTTP are HTML webpages, which gives the protocol its name."
+HTTPS,Uses SSL along with HTTP to encrypt communication over the internet. 
+hybrid app,"Hybrids apps are web frontends that use JavaScript and HTML, embedded into a native mobile app. Hybrid apps allow frontend web developers to create native mobile apps for both Android and iOS at the same time without much knowledge of the programming languages specific to those platforms. This saves time and eliminates the need for a separate mobile developer. The tradeoff is that hybrid apps do not match the performance of native mobile apps, but in many cases the differences are not noticeable to users. Common examples are React Native, Ionic and Xamarin."
+I/O,
+Ionic,
+iOS,
+Jade,
+Java,"Java is a programming language with many applications, but most commonly associated with the backend of web applications and Android applications. Java was very popular in the 90s and 00s for the web, but has fallen out of favor recently. Not to be confused with JavaScript, an entirely different programming language."
+JavaScript,"JavaScript is the most widely-used programming language in the world, due to the fact that it is the only language supported by all of the major web browsers. JavaScript provides interactivity to web pages, and is the only common frontend language. JavaScript can also be used as a backend language with Node.js."
+jQuery,
+library,
+Linux,"Linux is an open-source operating system. Linux is free to use, and is maintained and updated by a group of volunteer developers around the world. Linux can be used on Desktop PCs, but is only popular for this amongst knowedeable computer experts and enthusiasts. While Linux only has a niche application for desktops, it is the most popular operating system for servers, with one estimate stating that over 70% of server on the internet use a Linux operating system."
+machine learning,
+Meteor,
+mobile app,"A software application that lives and runs natively on a mobile device, like an iPhone or Android tablet. Examples include Instagram, Twitter, and mobile Safari."
+MongoDB,MongoDB is a popular NoSQL database.
+MySQL,"MySQL is one of the two most popular relational databases, along with PostgreSQL. "
+native app,A software application that stores and runs the code for its user interface directly on a device. Desktop and mobile apps are both examples of native apps. Can be contrasted with a web app.
+New Relic,
+Node.js,"Node.js allows developers to use JavaScript, a language primarily associated with the frontend and the browser, on the backend. Node.js is one of the most popular choices for web backends, and allows developers to use only one language across a whole web app."
+NoSQL,A type of database that is an alternative to relational databases. NoSQL databases do not use SQL to interact with data (hence the name). NoSQL databases are popular for types of data that have unkown or variable structure. NoSQL databases have other differences and trade-offs when compared to traditional relational databases as well.
+NPM,
+Objective-C,
+open source,"Software that is built using code that is publicly visible and accesible. The prototypical example is Linux, an operating system that is free to use and modify. Linux is maintained by a distributed group of volunteer developers around the world. In contrast, Apple Mac OSX is closed source. The code is not publicly visible, and only paying customers who own Mac computers can use it. OSX is also only written and maintained by developers who work at Apple."
+operating system,
+payment gateway,"A service that simplifies the process of accepting payments by credit card, bank transfer, paypal and other systems. Developers and companies pay a small transaction fee to payment gateway providers in exchange for ease of setup, and to leverage the security and reliability of the provider. Common examples are Stripe and Braintree."
+PHP,"PHP is a programming language that is popular for the backend of web apps. PHP was very popular in the 90s and 00s, and is still very popular outside of the US. In the US, it has fallen out of favor and is not used by many top developers."
+PostgreSQL,"PostgreSQL is one of the two most popular relational databases, along with MySQL. "
+Puppet,
+Python,"Python is a programming language that is popular both for the web and for statistics, data science, and machine learning. Python is very easy to use and readable, much like Ruby, and has popular frameworks available like Django and Flask. A great choice for a backend language, especially if you also plan to have a lot of data science requirements."
+React,"React.js is one of the most popular frameworks for building web frontends in JavaScript. Other options include Angular.js, Ember.js, and Backbone.js."
+React Native,React Native allows developers to build hybrid mobile apps using the React JavaScript framework.
+relational database,"The most popular type of database, relational databases can be thought of as a series of large excel spreadsheets. They store data in ""tables"" (like a spreadsheet), with data entered in rows with columns representing attributes for each row of data."
+responsive design,"A design principle that takes into consideration different screen sizes when building UIs. A webpage with proper responsive design will look good in desktop, tablet, and mobile browsers on devices with any screen size."
+REST,
+Ruby,"Ruby is a modern programming language renowned for its ease-of-use and readability. Ruby became popular, and remains so today, because of its use with the Ruby on Rails backend web application framework. Ruby is used on the backend of many popular web apps."
+Ruby on Rails,"A web application framework created to allow developers to build the backend of common web applications quickly and efficiently. Rails is built using the Ruby programming language, and provides a scaffolding for developers to write code on top of. This solid foundation allows for fast development and reduces the number of bugs that arise."
+Sass,
+Scala,"A modern, high-performance language based on Java. Scala is very popular for software with huge traffic or performance demands, but is not recommended for smaller software projects because developers can be hard to find and are expensive. Scala software will also generally take longer to build and update."
+server,"Receives and responds to requests from a client over the internet. Most commonly in a web application, the server will receive a request from the client to retrieve, create, or update information stored in the database."
+SQL,Structured Query Language. SQL is used to retreive and update data stored in most common relational databases.
+SSL,Secure Sockets Layer. A system used by protocols like HTTP to encrypt data sent over the internet. SSL is the predecessor to TLS.
+Stripe,A company that provides payment processing services for a transaction fee. 
+Swift,
+SysAdmin,
+Ubuntu,
+UI,
+UX ,
+versioning,
+virtual machine,
+web app,"A type of software where the user interface exists in your browser. Unlike a native application for mobile or desktop where the UI is always stored on the device, the UI for a web app is delivered over the internet to a web browser. Web app UIs are built using HTML, with interactivity provided by JavaScript, and a backend with a server and database."
+Webpack,
+Xamarin,
+cloud,
