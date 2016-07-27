@@ -1,41 +1,66 @@
-<nav>
-  <div class="col-md-2">
-    <div class="logo">
-      <a href="<%= root_path %>">
-        <div class="logo-image"></div>SimpleCTO
-      </a>
-    </div>
-  </div>
+<nav id="navigation">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2">
+        <div class="logo">
+          <a href="<%= root_path %>">
+            <div class="logo-image"></div>SimpleCTO
+          </a>
+        </div>
+      </div>
 
-  <div class="col-md-10">
-    <div class="nav-right">
-      <% if user_signed_in? %>
-        <span class="nav-button">
-          <%= link_to 'Browse', questions_path %>
-        </span>
-        <span class="nav-button">
-          <%= link_to "Ask", new_question_path, class: "accent" %>
-        </span>
-        <span class="static nav-button">|</span>
-        <a href="<%= consultation_path %>" class="secondary nav-button">
-          <%= fa_icon "phone-square" %> Call a Consultant
-        </a>
-        <span class="secondary nav-button">
-          <%= link_to 'Log out', destroy_user_session_path, :method=>'delete' %>
-        </span>
-      <% else %>
-        <a href="<%= consultation_path %>" class="nav-button">
-          <%= fa_icon "phone-square" %> Call a Consultant
-        </a>
-        <a href="https://blog.simplecto.com" class="nav-button">Blog</a>
-        <span class="static nav-button">|</span>
-        <span class="secondary nav-button">
-          <%= link_to 'Sign up', new_user_registration_path %>
-        </span>
-        <span class="secondary nav-button">
-          <%= link_to 'Log in', new_user_session_path %>
-        </span>
-      <% end %>
+      <div class="col-md-10">
+        <div class="nav-right">
+          <% if user_signed_in? %>
+            <span class="nav-button">
+              <%= link_to 'Browse', questions_path %>
+            </span>
+            <span class="nav-button">
+              <%= link_to "Ask", new_question_path, class: "accent" %>
+            </span>
+            <div class="dropdown">
+              <span class="nav-button btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                Free Content
+                <span class="caret"></span>
+              </span>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                <li><a href="https://blog.simplecto.com">Blog</a></li>
+                <li role="separator" class="divider"></li>
+                <li><%= link_to "Tech Lingo Cheatsheet", tech_lingo_path %></li>
+              </ul>
+            </div>
+            <span class="static nav-button">|</span>
+            <a href="<%= consultation_path %>" class="secondary nav-button">
+              <%= fa_icon "phone-square" %> Call a Consultant
+            </a>
+            <span class="secondary nav-button">
+              <%= link_to 'Log out', destroy_user_session_path, :method=>'delete' %>
+            </span>
+          <% else %>
+            <a href="<%= consultation_path %>" class="nav-button">
+              <%= fa_icon "phone-square" %> Call a Consultant
+            </a>
+            <div class="dropdown">
+              <span class="nav-button btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                Free Content
+                <span class="caret"></span>
+              </span>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                <li><a href="https://blog.simplecto.com">Blog</a></li>
+                <li role="separator" class="divider"></li>
+                <li><%= link_to "Tech Lingo Cheatsheet", tech_lingo_path %></li>
+              </ul>
+            </div>
+            <span class="static nav-button">|</span>
+            <span class="secondary nav-button">
+              <%= link_to 'Sign up', new_user_registration_path %>
+            </span>
+            <span class="secondary nav-button">
+              <%= link_to 'Log in', new_user_session_path %>
+            </span>
+          <% end %>
+        </div>
+      </div>
     </div>
   </div>
 </nav>
