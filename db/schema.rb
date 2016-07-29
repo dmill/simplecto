@@ -57,7 +57,7 @@ ActiveRecord::Schema.define(version: 20160729195053) do
     t.string   "stripe_id"
     t.boolean  "subscribed",             default: true
     t.boolean  "free_question_used",     default: false
-    t.string   "photo_url"
+    t.string   "photo_url",              default: ""
     t.index ["email"], name: "index_users_on_email", unique: true, using: :btree
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
   end
