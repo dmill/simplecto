@@ -7,11 +7,7 @@
       <h1><%= @question.title %></h1>
       <% if @question.answer_video %>
         <iframe width="100%" height="422" src="<%= @question.answer_video %>" frameborder="0" allowfullscreen></iframe>
-      <% elsif current_user.free_question_used && !current_user.subscribed %>
-        <div class="awaiting-answer">
-          <%= fa_icon "clock-o" %> You've already used your free first question, in order to receive another answer <%= link_to "subscribe here", new_subscription_path %>.
-        </div>
-      <% else %>
+      <% elsif !@question.answer_text %>
         <div class="awaiting-answer">
           <%= fa_icon "clock-o" %> This question hasn't been answered yet. Please wait while one of our experts records a response.
         </div>
@@ -21,9 +17,15 @@
         <div class="text-container">
           <p><%= @question.question_text %></p>
         </div>
-        <% if @question.answer_text && @question.answer_video %>
+        <% if @question.answer_text%>
           <h2>Answer</h2>
           <div class="text-container">
+            <div class="answerer">
+            <img src="<%= @question.answerer.photo_url %>" />
+            <div class="answerer-name clear-fix">
+              <%= @question.answerer.first_name %>&nbsp;
+              <%= @question.answerer.last_name %>
+            </div>
             <p><%= @question.answer_text %></p>
           </div>
         <% end %>

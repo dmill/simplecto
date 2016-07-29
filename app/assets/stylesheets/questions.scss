@@ -52,6 +52,20 @@
     background: $red;
   }
 
+  .answerer {
+    img {
+      width: 6rem;
+      margin: 2rem 1rem 1rem 0;
+      border-radius: 3px;
+      float: left;
+    }
+    .answerer-name {
+      font-family: "Raleway", sans-serif;
+      color: $red-fade;
+      line-height: 10rem;
+    }
+  }
+
   padding-bottom: 6rem;
 }
 
