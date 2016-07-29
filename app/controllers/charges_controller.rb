@@ -4,7 +4,8 @@ class ChargesController < ApplicationController
     fifty: "5000",
     seventy_five: "7500",
     one_fifty: "15000",
-    one_seventy_five: "17500"
+    one_seventy_five: "17500",
+    five_ninety_nine: "59900"
   }.with_indifferent_access.freeze
 
   def create

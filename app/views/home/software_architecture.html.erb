@@ -76,14 +76,14 @@
               <li>One-Hour Debrief Call</li>
             </ul>
         <%= form_tag charges_path do %>
-          <%= hidden_field_tag "product", "one_seventy_five" %>
+          <%= hidden_field_tag "product", "five_ninety_nine" %>
           <script
             src="https://checkout.stripe.com/checkout.js" class="stripe-button"
             data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
-            data-amount="17500"
+            data-amount="59900"
             data-name="Software Architecture PDF"
             data-description="PDF File Sent to Your Email"
-            data-image="images/stripe-icon.png"
+            data-image="/images/logo-small-red.png"
             data-zip-code="true"
             data-locale="auto"
             data-label="Purchase Now">
