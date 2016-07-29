@@ -1,4 +1,4 @@
 class Question < ApplicationRecord
   belongs_to :user
-  belongs_to :answerer, class_name: "User"
+  belongs_to :expert, class_name: "User"
 end
