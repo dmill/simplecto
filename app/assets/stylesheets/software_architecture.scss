@@ -1,0 +1,192 @@
+#software-arch {
+  background-color: #2c2c2c;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 0;
+  overflow-y: scroll;
+  background-image: url('/images/discovery-launch.jpg');
+
+  h1 {
+    font-family: "Raleway", sans-serif;
+    font-size: 72px;
+    font-weight: 600;
+  }
+
+  h3 {
+    font-family: "Lato", sans-serif;
+    color: $red-fade;
+    font-weight: 100;
+    margin-top: -20px;
+    font-size: 24px;
+    margin-bottom: 25px;
+  }
+
+  h4 {
+    font-family: "Raleway", sans-serif;
+    font-size: 54px;
+    font-weight: 600;
+    color: $red-fade;
+    margin-bottom: 10px;
+    margin-top: 0;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .intro {
+    h1 {
+      color: #fff;
+      margin-bottom: 40px;
+      margin-top: 150px;
+      line-height: 100%;
+      text-align: center;
+    }
+
+    h2 {
+      color: #fff;
+      text-align: center;
+    }
+
+    .cta {
+      text-align: center;
+      margin-top: 125px;
+      margin-bottom: 75px;
+    }
+
+    .button.pill {
+      border: 3px solid $red-hl;
+      border-radius: 100px;
+      height: 50px;
+      background-color: $red-hl;
+      padding: 12px 35px;
+      color: #fff;
+      font-family: "Raleway", sans-serif;
+      font-weight: 700;
+      font-size: 16px;
+      text-transform: uppercase;
+      cursor: pointer;
+      letter-spacing: 1px;
+
+      &:hover {
+        border: 3px solid $red;
+        background-color: #fff;
+        color: $red;
+        transition: 0.2s;
+      }
+    }
+  }
+
+  .information {
+    background-color: $red-fade;
+    text-align: center;
+
+    h2 {
+      color: #fff;
+      font-size: 56px;
+      margin-bottom: 30px;
+      margin-top: 100px;
+      font-style: italic;
+    }
+
+    img {
+      width: 80%;
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+  }
+
+  .process {
+    background-color: #fff;
+    text-align: center;
+
+    h2 {
+      color: $purple;
+      font-size: 56px;
+      margin-bottom: 20px;
+    }
+
+    h3 {
+      color: $purple;
+      font-size: 30px;
+    }
+
+    p {
+      color: $black;
+    }
+
+    img {
+      width: 45%;
+      margin-bottom: 40px;
+    }
+  }
+
+  .pricing {
+    h2 {
+      font-family: "Lato", sans-serif;
+      color: #fff;
+      font-weight: 100;
+      font-size: 72px;
+      margin-bottom: 10px;
+      letter-spacing: -4px;
+      margin-top: 20px;
+    }
+  }
+
+  .sample {
+    background-color: $black;
+
+    .doc {
+      margin-bottom: 40px;
+
+      h2 {
+        text-align: center;
+        color: #fff;
+        font-size: 48px;
+        margin-bottom: 20px;
+      }
+
+      iframe {
+        margin: 0;
+        height: 600px;
+        width: 100%;
+        border: none;
+      }
+    }
+  }
+
+  #purchase-container {
+    text-align: center;
+    border: 2px solid $red-fade;
+    border-radius: 10px;
+    padding-bottom: 60px;
+    padding-top: 30px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+    h2 {
+      margin-bottom: 40px;
+    }
+  }
+
+  ul {
+    text-align: center;
+    color: #fff;
+    list-style-type: none;
+    margin-bottom: 25px;
+    margin-right: 40px;
+  }
+
+  li {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  p {
+    color: #fff;
+    font-size: 16px;
+  }
+}

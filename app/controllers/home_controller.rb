@@ -4,7 +4,6 @@ class HomeController < ApplicationController
   end
 
   def software_architecture
-    render :layout => false
   end
 
   def tech_lingo

@@ -1,61 +1,97 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300' rel='stylesheet' type='text/css'>
-  <title>Software Architecture Overview</title>
-</head>
-<body style="margin: 0;">
-<div id="software-architecture">
-  <h1>Software Architecture Overview</h1>
-  <h2>Learn the next steps you need to take in getting your software idea developed</h2>
-  <div class="left">
-    <p>This PDF has saved entrepreneurs thousands of dollars and hundreds of hours by setting them on the right path to get their idea developed.</p>
-    <%= form_tag charges_path do %>
-      <%= hidden_field_tag "product", "one_seventy_five" %>
-      <script
-        src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-        data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
-        data-amount="17500"
-        data-name="Software Architecture PDF"
-        data-description="PDF File Sent to Your Email"
-        data-image="images/stripe-icon.png"
-        data-zip-code="true"
-        data-locale="auto"
-        data-label="Purchase Now">
-      </script>
-    <% end %>
-    <p>It is just too easy for an entrepreneur without a technical background to get conned by a predatory software development team.</p>
-    <p>Even developers with high ratings and reviews on marketplaces like UpWork or oDesk have proven themselves to nickle and dime the project owners and to constantly miss deadline after deadline.</p>
-    <p>Armed with the knowledge in this PDF, you will learn your business idea inside and out allowing you to prevent shady developers from pulling your leg.</p>
-    <p>You will have:</p>
-    <ul>
-      <li>Development Timeline - to ensure your features are built in the right order</li>
-      <li>Payment Milestones - to ensure you only pay the developer for high-quality, working code</li>
-      <li>And a high-level understanding of the software involved in your application so you can truly understand your business idea</li>
-    </ul>
-    <p>With this know-how, you will be able to find the right development team for you, to get the job done on-time, and on-budget, with the features you envisioned.</p>
-    <%= form_tag charges_path do %>
-      <%= hidden_field_tag "product", "one_seventy_five" %>
-      <script
-        src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-        data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
-        data-amount="17500"
-        data-name="Software Architecture PDF"
-        data-description="PDF File Sent to Your Email"
-        data-image="images/stripe-icon.png"
-        data-zip-code="true"
-        data-locale="auto"
-        data-label="Purchase Now">
-      </script>
-    <% end %>
+<div id="software-arch">
+
+<%= render partial: "layouts/navigation_main" %>
+
+<section class="hero container-fluid intro">
+  <div class="row">
+    <div class="col-md-offset-2 col-md-8">
+      <h1>Software Architecture Jumpstart</h1>
+      <h2>Expert recommendations to get your project off the ground</h2>
+    </div>
   </div>
-  <div class="right">
-    <h2>Sample Software Architecture Overview</h2>
-    <iframe src="https://simplecto.com/downloads/ZaeTae-Software-Architecture.pdf"
-    ></iframe>
+  <div class="row cta">
+    <div class="col-md-offset-2 col-md-8">
+      <a href="#purchase-container" class="button pill">Purchase Now</a>
+    </div>
   </div>
+</section>
+
+<section class="information">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6 centered">
+        <img src="./images/adaptive_web_dev.png" />
+      </div>
+      <div class="col-md-6">
+        <h2>Taking you from idea to execution</h2>
+        <p>Building software without a technical partner can be daunting. Which programming languages and frameworks are best suited for your project? What are the trade-offs between different hosting environments? How much can I expect to pay a developer for the features I want, and how long will they take to build? With our Software Architecture Jumpstart, we'll answer these questions and more in order to ensure that you're equiped with all the knowledge required to have the best chance of success.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="process">
+  <h2>Our Process</h2>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-4">
+        <img src="images/call-icon.png" />
+        <h3>Kickoff Consultation</h3>
+        <p>First, you'll meet your software coach in a one-hour introductory call. During this call, you'll describe your vision and challenges, and your coach will gather all of the information he needs from you to understand your project. You'll also have time to brainstorm and ask any questions you've already come upon.</p>
+      </div>
+      <div class="col-md-4">
+        <img src="images/document-icon.png" />
+        <h3>Recommendation Document</h3>
+        <p>Next, your coach will prepare a custom recommendation document for you. This document will describe the ideal programming languages, hosting environments, and other technologies for your software. The document will also set an estimated time scope and cost for the development of your project, and outline any unique challenges that your idea faces.</p>
+      </div>
+      <div class="col-md-4">
+        <img src="images/question-icon.png" />
+        <h3>Debrief</h3>
+        <p>Finally, after receiving and reviewing your custom recommendations, you'll meet with your technology coach again for one hour. This final consultation will give you an opportunity to discuss your recommendations in-depth and clear up any lingering questions you have.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sample">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-offset-2 col-md-8 doc">
+        <h2>Sample Document</h2>
+        <iframe src="./downloads/ZaeTae-Software-Architecture.pdf"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pricing">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-offset-4 col-md-4">
+        <div id="purchase-container">
+            <h2>$599</h2>
+            <ul>
+              <li>One-Hour Kickoff Call</li>
+              <li>Software Architecture Recommendation Document</li>
+              <li>One-Hour Debrief Call</li>
+            </ul>
+        <%= form_tag charges_path do %>
+          <%= hidden_field_tag "product", "one_seventy_five" %>
+          <script
+            src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+            data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+            data-amount="17500"
+            data-name="Software Architecture PDF"
+            data-description="PDF File Sent to Your Email"
+            data-image="images/stripe-icon.png"
+            data-zip-code="true"
+            data-locale="auto"
+            data-label="Purchase Now">
+          </script>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</section>
 </div>
-</body>
-</html>
+
