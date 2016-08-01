@@ -21,10 +21,6 @@ class QuestionsController < ApplicationController
 
   def show
     @question = Question.find(params[:id])
-
-    unless @question.user == current_user || current_user.subscribed
-      redirect_to new_subscription_path
-    end
   end
 
   private

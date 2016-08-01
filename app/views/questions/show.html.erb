@@ -21,10 +21,10 @@
           <h2>Answer</h2>
           <div class="text-container">
             <div class="answerer">
-            <img src="<%= @question.answerer.photo_url %>" />
+            <img src="<%= @question.expert.photo_url %>" />
             <div class="answerer-name clear-fix">
-              <%= @question.answerer.first_name %>&nbsp;
-              <%= @question.answerer.last_name %>
+              <%= @question.expert.first_name %>&nbsp;
+              <%= @question.expert.last_name %>
             </div>
             <p><%= @question.answer_text %></p>
           </div>
