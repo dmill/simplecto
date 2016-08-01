@@ -43,6 +43,6 @@ class QuestionsController < ApplicationController
   end
 
   def render_all_questions
-    @questions = Question.all.select { |question| question.answer_video }
+    @questions = Question.all.select { |question| question.answer_video || question.answer_text }
   end
 end
