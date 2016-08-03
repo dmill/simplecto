@@ -1,4 +1,4 @@
-<div class="messenger-tab centered noselect">
+<div class="messenger-tab centered noselect loading">
   <div>Need a dev team? Hire us</div>
   <div class="images">
     <img class="circle" src="/images/andrew.jpeg" />
@@ -18,14 +18,20 @@
 
   (function(d, s, id){
     var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
     js = d.createElement(s); js.id = id;
     js.src = "//connect.facebook.net/en_US/sdk.js";
     fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));
 
-  $('.messenger-tab').on('click', function() {
-    $('.messenger-popup').toggleClass('active');
-  })
+  $(window).load(function(){
+    $('.messenger-tab').removeClass('loading');
+
+    $('.messenger-tab').on('click', function() {
+      $('.messenger-popup').toggleClass('active');
+    })
+  });
+
 </script>
 
 <div class="messenger-popup">
@@ -35,8 +41,7 @@
        data-width="400"
        data-height="300"
        data-small-header="true"
-       data-show-facepile="true"
-       data-adapt-container-width="true">
+       data-show-facepile="true">
     <div class="fb-xfbml-parse-ignore">
       <blockquote></blockquote>
     </div>
