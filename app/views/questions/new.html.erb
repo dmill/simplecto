@@ -3,47 +3,6 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-md-4 question-suggestions">
-      <h2>Good Questions</h2>
-      <ul>
-        <li>hi</li>
-        <li>hey</li>
-      </ul>
-      <h2>Bad Questions</h2>
-      <ul>
-        <li>hi</li>
-        <li>hey</li>
-      </ul>
-    </div>
-    <div class="col-md-8 centered">
-      <h2>Ask an Expert</h2>
-
-      <%= form_for @question, url: {action: "create"}, html: {class: "form"} do |f| %>
-        <%= f.text_field :title, placeholder: "Subject" %>
-        <%= f.text_area :question_text, placeholder: "Describe the issue" %>
-        <%= f.submit "Get an Answer", class: "button pill red" %>
-      <% end %>
-    </div>
-  </div>
-</div>
-
-</div>
-
-
-<div class="container">
-  <div class="row">
-    <div class="col-md-4 question-suggestions">
-      <h2>Good Questions</h2>
-      <ul>
-        <li>hi</li>
-        <li>hey</li>
-      </ul>
-      <h2>Bad Questions</h2>
-      <ul>
-        <li>hi</li>
-        <li>hey</li>
-      </ul>
-    </div>
     <div class="col-md-8 centered">
       <h2>Ask an Expert</h2>
 
