@@ -13,6 +13,8 @@ Rails.application.routes.draw do
 
   get "1-hour" => "home#60"
 
+  get "privacy_policy" => "home#privacy_policy"
+
   devise_for :users, controllers: { registrations: "users/registrations" }
 
   resources :questions
