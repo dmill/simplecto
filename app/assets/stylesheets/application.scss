@@ -25,6 +25,7 @@
 @import 'tech-lingo';
 @import 'navigation';
 @import 'software_architecture.scss';
+@import 'messenger';
 
 
 html, body {
@@ -64,4 +65,14 @@ img.circle {
 .flash {
   margin: 0;
   padding: 0;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+  user-select: none;           /* Non-prefixed version, currently
+                                  not supported by any browser */
 }
