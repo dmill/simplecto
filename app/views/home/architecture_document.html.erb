@@ -1,0 +1,73 @@
+<div id="software-arch">
+
+<%= render partial: "layouts/navigation_main" %>
+
+<section class="hero container-fluid intro">
+  <div class="row">
+    <div class="col-md-offset-2 col-md-8">
+      <h1>Software Architecture Document</h1>
+      <h2>Expert recommendations to get your project off the ground</h2>
+    </div>
+  </div>
+  <div class="row cta">
+    <div class="col-md-offset-2 col-md-8">
+      <a href="#purchase-container" class="button pill">Purchase Now</a>
+    </div>
+  </div>
+</section>
+
+<section class="information">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6 centered">
+        <img src="./images/adaptive_web_dev.png" />
+      </div>
+      <div class="col-md-6">
+        <h2>Taking you from idea to execution</h2>
+        <p>Building software without a technical partner can be daunting. Which programming languages and frameworks are best suited for your project? What are the trade-offs between different hosting environments? How much can I expect to pay a developer for the features I want, and how long will they take to build? With our Software Architecture Document, we'll answer these questions and more in order to ensure that you're equiped with all the knowledge required to have the best chance of success.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sample">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-offset-2 col-md-8 doc">
+        <h2>Sample Document</h2>
+        <iframe src="./downloads/ZaeTae-Software-Architecture.pdf"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pricing">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-offset-4 col-md-4">
+        <div id="purchase-container">
+            <h2>$175</h2>
+            <ul>
+              <li>Software Architecture Recommendation Document</li>
+            </ul>
+        <%= form_tag charges_path do %>
+          <%= hidden_field_tag "product", "one_seventy_five" %>
+          <script
+            src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+            data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+            data-amount="17500"
+            data-name="Software Architecture PDF"
+            data-description="PDF File Sent to Your Email"
+            data-image="/images/logo-small-red.png"
+            data-zip-code="true"
+            data-locale="auto"
+            data-label="Purchase Now">
+          </script>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+
+<%= render partial: 'layouts/messenger' %>
