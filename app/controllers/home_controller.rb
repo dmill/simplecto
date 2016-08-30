@@ -6,6 +6,10 @@ class HomeController < ApplicationController
   def software_architecture
   end
 
+  def guide_to_web_applications
+    render layout: "guide"
+  end
+
   def privacy_policy
   end
 

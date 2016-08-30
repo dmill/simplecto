@@ -1,8 +1,8 @@
-.messenger-popup {
+#messenger-popup {
   display: none;
 }
 
-.messenger-popup.active {
+#messenger-popup.active {
   display: block;
   position: fixed;
   bottom: 110px;
@@ -10,7 +10,7 @@
   box-shadow: 0 6px 13px 0 rgba(0,0,0,.23);
 }
 
-.messenger-tab {
+#messenger-tab {
   background-color: #34a0ff;
   border-radius: 10px;
   font-size: 12px;
@@ -23,11 +23,7 @@
   font-family: "Raleway", sans-serif;
   box-shadow: 0 6px 13px 0 rgba(0,0,0,.23);
   transition: .3s cubic-bezier(0, 1.05, 1, 1.05);
-  transform: translateY(0);
-
-  &.loading {
-    transform: translateY(100px);
-  }
+  transform: translateY(100px);
 
   &:hover {
     box-shadow: 0 7px 15px 0 rgba(0,0,0,.28);

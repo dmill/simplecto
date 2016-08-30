@@ -3,6 +3,8 @@ Rails.application.routes.draw do
 
   root to: "home#index"
 
+  get "guide-to-web-applications" => "home#guide_to_web_applications"
+
   get "software-architecture" => "home#software_architecture"
 
   get "tech-lingo" => "home#tech_lingo"
