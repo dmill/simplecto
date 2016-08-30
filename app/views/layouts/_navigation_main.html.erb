@@ -20,6 +20,17 @@
             </span>
             <div class="dropdown">
               <span class="nav-button btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                Services
+                <span class="caret"></span>
+              </span>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                <li><%= link_to "Call a Consultant", consultation_path %></li>
+                <li role="separator" class="divider"></li>
+                <li><%= link_to "Software Jumpstart", software_architecture_path %></li>
+              </ul>
+            </div>
+            <div class="dropdown">
+              <span class="nav-button btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                 Free Content
                 <span class="caret"></span>
               </span>
@@ -30,10 +41,6 @@
               </ul>
             </div>
             <span class="static nav-button">|</span>
-            <a href="<%= consultation_path %>" class="secondary nav-button">
-              <%= fa_icon "phone-square" %> Call a Consultant
-            </a>
-            <a href="<%= software_architecture_path %>" class="nav-button">Software Jumpstart</a>
             <span class="secondary nav-button">
               <%= link_to 'Log out', destroy_user_session_path, :method=>'delete' %>
             </span>
@@ -41,10 +48,17 @@
             <span class="nav-button">
               <%= link_to "Ask an Expert", new_question_path, class: "accent" %>
             </span>
-            <a href="<%= consultation_path %>" class="nav-button">
-              <%= fa_icon "phone-square" %> Call a Consultant
-            </a>
-            <a href="<%= software_architecture_path %>" class="nav-button">Software Jumpstart</a>
+            <div class="dropdown">
+              <span class="nav-button btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                Services
+                <span class="caret"></span>
+              </span>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                <li><%= link_to "Call a Consultant", consultation_path %></li>
+                <li role="separator" class="divider"></li>
+                <li><%= link_to "Software Jumpstart", software_architecture_path %></li>
+              </ul>
+            </div>
             <div class="dropdown">
               <span class="nav-button btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                 Free Content
