@@ -30,11 +30,55 @@
     <h1 class="section--hero__h1">
       fill your technical knowledge gap
     </h1>
-    <img class="booklet" src="./images/booklet.png" />
-  </div>
-  <h2 class="section--hero__h2 animated bounceInUp delay2">
-    learn web application architecture in just 20 minutes
+    <h2 class="section--hero__h2 animated bounceInUp delay1">
+    learn to launch a time and cost efficient software product in just 20 minutes
   </h2>
+    <ul id="bk-list" class="bk-list clearfix animated fadeIn delay2">
+      <li>
+        <div class="bk-book book-1 bk-bookdefault">
+          <div class="bk-front">
+            <div class="bk-cover-back"></div>
+            <div class="bk-cover">
+              <h2>
+                <span>Guide to Web Applications</span>
+                <p>Best Practices on Hiring, Designing, and Managing the Development of a Software Product</p>
+              </h2>
+            </div>
+          </div>
+          <div class="bk-page">
+            <div class="bk-content bk-content-current">
+
+              <em><strong><p>“Software is eating the world”</p>
+              <p> -Marc Andreessen
+              </p></strong></em>
+              <p>In today’s world of tech giants, unicorns, and stories of rags to riches, one thing is clear - embrace technology or be left behind.</p>
+            </div>
+            <div class="bk-content">
+              <p> Specifically, the widespread adoption of the internet has enabled an unprecedented level of communication and sharing. As such, entrepreneurs all around the world are seeking new ways to create and capture value in this rapidly expanding industry.</p>
+            </div>
+            <div class="bk-content">
+              <p>How does someone without a technical background proceed? How do Marketers, MBAs, Sales people, and those with other skillsets successfully launch a software product?</p>
+              </div>
+            <div class="bk-content">
+              <p>That’s the question we aim to answer at SimpleCTO. And we truly believe that any entrepreneur, of any background can start a software business and succeed.</p>
+            </div>
+          </div>
+          <div class="bk-back">
+          </div>
+          <div class="bk-right"></div>
+          <div class="bk-left">
+            <h2>
+              <span>Andrew Wong & Douglas Mill</span>
+            </h2>
+          </div>
+          <div class="bk-top"></div>
+          <div class="bk-bottom"></div>
+        </div>
+        <div class="bk-info">
+        </div>
+      </li>
+    </ul>
+  </div>
 </section>
 
 <section class="section--bg-white centered">
@@ -205,7 +249,7 @@
       document.getElementById('feature3').classList.add('animated', 'slideInLeft');
     }
 
-    if(pageOffset >= guestOffset + 500) {
+    if(pageOffset >= guestOffset + 300) {
       guest.classList.add('animated', 'fadeInUp');
     }
 
@@ -217,4 +261,95 @@
       cta.classList.add('animated', 'zoomIn');
     }
   })
+</script>
+<script   src="https://code.jquery.com/jquery-3.1.0.slim.min.js"   integrity="sha256-cRpWjoSOw5KcyIOaZNo4i6fZ9tKPhYYb6i5T9RSVJG8="   crossorigin="anonymous"></script>
+<script>
+var Books = (function() {
+
+  var $books = $( '#bk-list > li > div.bk-book' ), booksCount = $books.length;
+
+  function init() {
+
+    $books.each( function() {
+
+      var $book = $( this ),
+        $other = $books.not( $book ),
+        $parent = $book.parent(),
+        $page = $book.children( 'div.bk-page' ),
+        $bookview = $parent.find( '.bk-front' ),
+        $content = $page.children( 'div.bk-content' ), current = 0;
+
+      $parent.find( 'button.bk-bookback' ).on( 'click', function() {
+
+        $bookview.removeClass( 'bk-active' );
+
+        if( $book.data( 'flip' ) ) {
+
+          $book.data( { opened : false, flip : false } ).removeClass( 'bk-viewback' ).addClass( 'bk-bookdefault' );
+
+        }
+        else {
+
+          $book.data( { opened : false, flip : true } ).removeClass( 'bk-viewinside bk-bookdefault' ).addClass( 'bk-viewback' );
+
+        }
+
+      } );
+
+      $bookview.on( 'click', function() {
+
+        var $this = $( this );
+
+        $other.data( 'opened', false ).removeClass( 'bk-viewinside' ).parent().css( 'z-index', 0 ).find( 'button.bk-bookview' ).removeClass( 'bk-active' );
+        if( !$other.hasClass( 'bk-viewback' ) ) {
+          $other.addClass( 'bk-bookdefault' );
+        }
+
+        if( $book.data( 'opened' ) ) {
+          $this.removeClass( 'bk-active' );
+          $book.data( { opened : false, flip : false } ).removeClass( 'bk-viewinside' ).addClass( 'bk-bookdefault' );
+        }
+        else {
+          $this.addClass( 'bk-active' );
+          $book.data( { opened : true, flip : false } ).removeClass( 'bk-viewback bk-bookdefault' ).addClass( 'bk-viewinside' );
+          $parent.css( 'z-index', booksCount );
+          current = 0;
+          $content.removeClass( 'bk-content-current' ).eq( current ).addClass( 'bk-content-current' );
+        }
+
+      } );
+
+      if( $content.length > 1 ) {
+
+        var $navPrev = $( '<span class="bk-page-prev">&lt;</span>' ),
+          $navNext = $( '<span class="bk-page-next">&gt;</span>' );
+
+        $page.append( $( '<nav></nav>' ).append( $navPrev, $navNext ) );
+
+        $navPrev.on( 'click', function() {
+          if( current > 0 ) {
+            --current;
+            $content.removeClass( 'bk-content-current' ).eq( current ).addClass( 'bk-content-current' );
+          }
+          return false;
+        } );
+
+        $navNext.on( 'click', function() {
+          if( current < $content.length - 1 ) {
+            ++current;
+            $content.removeClass( 'bk-content-current' ).eq( current ).addClass( 'bk-content-current' );
+          }
+          return false;
+        } );
+
+      }
+
+    } );
+
+  }
+
+  return { init : init };
+
+})();
+  Books.init()
 </script>
