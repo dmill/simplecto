@@ -140,7 +140,7 @@
   </div>
   <div class="container">
     <div class="col-md-7">
-      <iframe class="guide-preview" src="./downloads/ZaeTae-Software-Architecture.pdf"></iframe>
+      <iframe class="guide-preview" src="./assets/simple-cto-guide-to-web-applications-preview.pdf"></iframe>
     </div>
     <div class="col-md-4">
       <div id="pricing-cards">
@@ -157,12 +157,25 @@
             <li class="card--pricing__li">Learn How to Hire and Manage Development Teams</li>
             <li class="card--pricing__li"><a href="mailto:doug@simplecto.com">100% Money Back Guarantee</a></li>
           </ul>
+          <div class="centered" style="margin-bottom: 20px">
+            <%= form_tag charges_path do %>
+              <%= hidden_field_tag "product", "guide_to_web_apps" %>
+              <script
+                src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+                data-amount="7500"
+                data-name="Guide to Web Applications"
+                data-description="PDF Instant Download"
+                data-image="./images/booklet.png"
+                data-zip-code="true"
+                data-locale="auto"
+                data-label="Purchase Booklet">
+              </script>
+            <% end %>
+          </div>
           <div class="card--pricing__bottom"></div>
         </div>
       </div>
-    </div>
-    <div class="cta--outline" id="cta">
-      Get Started for Free
     </div>
   </div>
 </section>
