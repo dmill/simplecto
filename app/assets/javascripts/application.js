@@ -15,4 +15,3 @@
 //= require_tree .
 //= require jquery-ui/autocomplete
 //= require bootstrap.min
-//= require jquery.min
