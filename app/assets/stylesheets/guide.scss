@@ -8,7 +8,7 @@ $orange: #f56961;
 
 .section--hero {
   background: $green;
-  height: calc(100vh - 95px);
+  height: calc(100vh - 85px);
   padding-top: 5vh;
 
   &__h1 {
@@ -71,8 +71,8 @@ $orange: #f56961;
 }
 
 .booklet {
-  height: 40vh;
-  margin-top: 20px;
+  height: 180px;
+  margin: 30px 0 30px -80px;
 }
 
 
@@ -85,6 +85,7 @@ $orange: #f56961;
     display: inline-block;
     vertical-align: top;
     margin-top: 18px;
+    width: calc(100% - 140px);
   }
 
   &__h1 {
@@ -101,7 +102,7 @@ $orange: #f56961;
   }
 
   &__img {
-    height: 100px;
+    width: 120px;
     padding: 15px 30px;
   }
 }
@@ -448,4 +449,18 @@ section {
 
 .centered {
   text-align: center;
+}
+
+.guide-preview {
+  width: 100%;
+  height: 23em;
+  margin-top: 40px;
+}
+
+a, a:visited, a:active {
+  color: inherit;
+}
+
+a:hover {
+  color: #333;
 }
