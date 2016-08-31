@@ -239,7 +239,6 @@
   var guestOffset = document.querySelector('.section--bg-offwhite').scrollHeight;
   var pricingCards = document.getElementById('pricing-cards');
   var pricingOffset = document.querySelector('.section--bg-green').offsetTop;
-  var cta = document.getElementById('cta');
 
   window.addEventListener('scroll', function() {
     var pageOffset = window.pageYOffset;
@@ -256,13 +255,9 @@
     if(pageOffset >= pricingOffset - 500) {
       pricingCards.classList.add('animated', 'fadeInUp', 'delay1');
     }
-
-    if(pageOffset >= pricingOffset - 100) {
-      cta.classList.add('animated', 'zoomIn');
-    }
   })
 </script>
-<script   src="https://code.jquery.com/jquery-3.1.0.slim.min.js"   integrity="sha256-cRpWjoSOw5KcyIOaZNo4i6fZ9tKPhYYb6i5T9RSVJG8="   crossorigin="anonymous"></script>
+
 <script>
 var Books = (function() {
 
