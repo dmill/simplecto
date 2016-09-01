@@ -11,7 +11,9 @@ var getTerms = function(terms) {
 $(document).ready(function() {
 
   // toggle nav bar on scroll
-  var headerBottom = $('.header').offset().top + $('.header').height();
+  if($('.header').offset()) {
+    var headerBottom = $('.header').offset().top + $('.header').height();
+  }
 
   $(window).on('scroll', function() {
     var threshold = Math.round($(window).scrollTop());
