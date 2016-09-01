@@ -1,0 +1,145 @@
+.development-intro {
+
+  h1 {
+    font-size: 72px;
+    margin-top: 200px;
+    font-weight: 200;
+    margin-bottom: 0px;
+    text-align: center;
+
+    i {
+      font-weight: 500;
+      color: $red;
+    }
+  }
+
+  .cta {
+    text-align: center;
+    margin-top: 125px;
+    margin-bottom: 75px;
+  }
+
+  .button {
+      white-space: nowrap;
+      border: 3px solid $red-hl;
+      border-radius: 10px;
+      height: 50px;
+      background-color: $red-hl;
+      padding: 12px 35px;
+      color: #fff;
+      font-family: "Raleway", sans-serif;
+      font-weight: 700;
+      font-size: 16px;
+      text-transform: uppercase;
+      cursor: pointer;
+      letter-spacing: 1px;
+
+      &:hover {
+        border: 3px solid $red;
+        background-color: #fff;
+        color: $red;
+        transition: 0.2s;
+      }
+  }
+
+  .typed-cursor {
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+  }
+
+  @keyframes blink {
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+  }
+
+  @-webkit-keyframes blink {
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+  }
+
+  @-moz-keyframes blink {
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+  }
+}
+
+.development-info {
+}
+
+.development-process {
+  .process-item {
+    border: solid black;
+  }
+
+  .process-heading {
+    text-align: center;
+
+    h3 {
+      font-size: 24px;
+    }
+  }
+
+  .material-icons {
+    color: $red;
+    font-size: 56px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  p.left {
+    text-align: right;
+  }
+
+  p.right {
+    text-align: left;
+  }
+}
+
+.development-case-studies {
+
+}
+
+.development-quote {
+
+}
+
+.development-technologies {
+
+  h2 {
+    font-size: 56px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .node {
+    padding-top: 40px;
+  }
+
+  .aws {
+    padding-top: 50px;
+  }
+
+  .heroku {
+    padding-top: 65px;
+  }
+
+  @media(max-width: 1000px) {
+    img {
+      display: block;
+      margin: auto;
+      width: 50%;
+      margin-top: 40px;
+    }
+  }
+}

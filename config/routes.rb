@@ -7,6 +7,8 @@ Rails.application.routes.draw do
 
   get "software-architecture" => "home#software_architecture"
 
+  get "development" => "home#development"
+
   get "tech-lingo" => "home#tech_lingo"
 
   get "consultation" => "home#consultation"
