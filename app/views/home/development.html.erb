@@ -1,12 +1,20 @@
+<link href="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.css">
+<script src="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.js"></script>
+<script>AOS.init();</script>
+
 <%= render partial: "layouts/navigation_main" %>
 
-<section class= "development-intro">
-  <h1><span class="typing">We build software that <i>works</i></span></h1>
-    <div class="container-fluid">
-      <div class="row cta">
-        <div class="col-md-offset-5 col-md-2">
-          <a href="#purchase-container" class="button">Get a Quote</a>
+<section class= "development-intro hidden-desktop">
+  <div class="container-fluid">
+    <div class="row">
+      <h1><span class="typing">We build software that <i>works</i></span></h1>
+      <div class="container-fluid">
+        <div class="row cta">
+          <div class="col-md-offset-5 col-md-2">
+            <a href="#purchase-container" class="button">Get a Quote</a>
+          </div>
         </div>
+      </div>
     </div>
   </div>
 </section>
@@ -18,16 +26,16 @@
 <section class="development-process">
   <div class="container-fluid">
     <div class="row">
-      <div class="col-md-offset-1 col-md-4 process-item">
+      <div class="col-md-offset-1 col-md-4 process-item" data-aos="fade-left">
         <div class="process-heading">
           <h3>Gameplan</h3>
           <i class="material-icons">assignment</i>
         </div>
-        <p class="left">Before ay code is written, it is crucial to have a clear picture of the product requirements and business goals. We will work with you to identify the most important features of your project and formulate a development timeline that works with your budget and deadline. We will then translate the timeline into discrete developer tasks within our Agile project management framework.</p>
+        <p class="left">Before any code is written, it is crucial to have a clear picture of the product requirements and business goals. We will work with you to identify the most important features of your project and formulate a development timeline that works with your budget and deadline. We will then translate the timeline into discrete developer tasks within our Agile project management framework.</p>
       </div>
     </div>
     <div class="row">
-      <div class="col-md-offset-7  col-md-4 process-item">
+      <div class="col-md-offset-7  col-md-4 process-item" data-aos="fade-right" data-aos-anchor=".development-process">
         <div class="process-heading">
           <h3>Design</h3>
           <i class="material-icons">photo_size_select_actual</i>
@@ -36,7 +44,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-md-offset-1 col-md-4 process-item">
+      <div class="col-md-offset-1 col-md-4 process-item" data-aos="fade-left">
         <div class="process-heading">
           <h3>Build</h3>
           <i class="material-icons">code</i>
@@ -45,7 +53,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-md-offset-7 col-md-4 process-item">
+      <div class="col-md-offset-7 col-md-4 process-item" data-aos="fade-right">
         <div class="process-heading">
           <h3>QA</h3>
           <i class="material-icons">done</i>
@@ -54,7 +62,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-md-offset-1 col-md-4 process-item">
+      <div class="col-md-offset-1 col-md-4 process-item" data-aos="fade-left">
         <div class="process-heading">
           <h3>Iterate</h3>
           <i class="material-icons">sync</i>
@@ -63,7 +71,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-md-offset-7 col-md-4 process-item">
+      <div class="col-md-offset-7 col-md-4 process-item" data-aos="fade-right">
         <div class="process-heading">
           <h3>Launch</h3>
           <i class="material-icons">flight_takeoff</i>
@@ -72,7 +80,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-md-offset-1 col-md-4 process-item">
+      <div class="col-md-offset-1 col-md-4 process-item" data-aos="fade-left">
         <div class="process-heading">
           <h3>Maintain</h3>
           <i class="material-icons">build</i>

@@ -1,32 +1,67 @@
 .development-intro {
 
   h1 {
-    font-size: 72px;
-    margin-top: 200px;
-    font-weight: 200;
-    margin-bottom: 0px;
+    color: #fff;
     text-align: center;
 
     i {
       font-weight: 500;
-      color: $red;
     }
   }
 
-  .cta {
-    text-align: center;
-    margin-top: 125px;
-    margin-bottom: 75px;
+  @media (min-width: 992px) {
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    background-image: url('/images/satellite.png');
+
+    h1 {
+      font-size: 72px;
+      margin-top: 250px;
+      font-weight: 200;
+      margin-bottom: 0px;
+    }
+
+    .cta {
+      text-align: center;
+      margin-top: 125px;
+      margin-bottom: 75px;
+    }
   }
 
+  @media (max-width: 991px) {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: 0% 50%;
+    background-image: url('/images/satellite-portrait.png');
+
+    h1 {
+      font-size: 56px;
+      margin-top: 150px;
+      font-weight: 200;
+      margin-bottom: 0px;
+    }
+
+    .cta {
+      text-align: center;
+      margin-top: 125px;
+      margin-bottom: 75px;
+    }
+  }
+
+
+
+
+
   .button {
+      margin-bottom: 1000px;
       white-space: nowrap;
-      border: 3px solid $red-hl;
       border-radius: 10px;
       height: 50px;
-      background-color: $red-hl;
+      background-color: #fff;
       padding: 12px 35px;
-      color: #fff;
+      color: $red-hl;
       font-family: "Raleway", sans-serif;
       font-weight: 700;
       font-size: 16px;
@@ -36,8 +71,8 @@
 
       &:hover {
         border: 3px solid $red;
-        background-color: #fff;
-        color: $red;
+        background-color: $red;
+        color: #fff;
         transition: 0.2s;
       }
   }
@@ -91,14 +126,7 @@
 
   p {
     font-size: 16px;
-  }
-
-  p.left {
-    text-align: right;
-  }
-
-  p.right {
-    text-align: left;
+    text-align: center;
   }
 }
 
