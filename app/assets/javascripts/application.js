@@ -16,3 +16,4 @@
 //= require jquery-ui/autocomplete
 //= require bootstrap.min
 //= require typed.min
+//= require wow.min
