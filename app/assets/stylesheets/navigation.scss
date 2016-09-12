@@ -1,5 +1,31 @@
 #navigation {
+
+  .navbar {
+    margin-bottom: 0;
+  }
+
   .dropdown {
     display: inline;
+  }
+
+  .icon-bar {
+    background-color: #2E2F33;
+  }
+
+  .navbar-right {
+    background-color: #fff;
+    margin-top: 0px;
+    border: 0px;
+    padding-top: 0px;
+  }
+
+  .dropdown-button {
+    font-size: inherit;
+    font-weight: inherit;
+    border: none;
+  }
+
+  #nav-items {
+    border-top: 0px;
   }
 }
