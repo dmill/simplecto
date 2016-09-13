@@ -21,6 +21,8 @@ Rails.application.routes.draw do
 
   get "privacy_policy" => "home#privacy_policy"
 
+  get "quote" => "home#quote"
+
   devise_for :users, controllers: { registrations: "users/registrations" }
 
   resources :questions

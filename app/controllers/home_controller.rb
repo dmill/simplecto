@@ -16,4 +16,8 @@ class HomeController < ApplicationController
   def tech_lingo
     @lingoes = Lingo.all
   end
+
+  def quote
+    render layout: false
+  end
 end
