@@ -87,6 +87,12 @@ nav {
   .dropdown-button {
     background-color: rgba(23,23,23,0.8);
   }
+
+  @media (max-width: 767px) {
+    .nav-dropdown-item {
+      color: #fff;
+    }
+  }
 }
 
 h1 {
