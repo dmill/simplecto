@@ -7,4 +7,7 @@ class User < ApplicationRecord
   has_many :questions
 
   validates_presence_of :email, :first_name, :last_name
+
+  scope :expert, -> { where(expert: true) }
+  scope :regular, -> { where(expert: false) }
 end
