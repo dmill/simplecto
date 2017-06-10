@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170610060505) do
+ActiveRecord::Schema.define(version: 20170610062557) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -54,7 +54,7 @@ ActiveRecord::Schema.define(version: 20170610060505) do
     t.string   "first_name"
     t.string   "last_name"
     t.string   "stripe_id"
-    t.boolean  "subscribed",             default: true
+    t.boolean  "subscribed",             default: false
     t.boolean  "free_question_used",     default: false
     t.string   "photo_url",              default: ""
     t.boolean  "expert",                 default: false
