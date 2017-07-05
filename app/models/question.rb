@@ -17,7 +17,7 @@ class Question < ApplicationRecord
   end
 
   def user_subscription
-    if !user.subscribed && user.free_question_used
+    if !user.subscribed && user.free_question_used && self.new_record?
       errors.add(:user_subscription, "unsubscribed user, free question used")
     end
   end
