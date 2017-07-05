@@ -1,6 +1,6 @@
 class Question < ApplicationRecord
   belongs_to :user
-  belongs_to :expert, class_name: "User"
+  belongs_to :expert, class_name: "User", optional: true
 
   before_save :change_user_free_question_used
 
